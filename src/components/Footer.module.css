@@ -1,0 +1,58 @@
+footer {
+  height: 22rem;
+  background-color: #333333;
+}
+
+.bottNav {
+  width: 80%;
+  height: 88%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #5a5b5b;
+}
+
+.logo {
+  margin: auto 0;
+}
+
+.bottNav h1 {
+  color: #f4ce14;
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  font-family: "Markazi Text", serif;
+}
+
+.bottNav li,
+.bottNav li a {
+  padding: 0.3rem 0;
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-family: "Markazi Text", serif;
+}
+
+.bottNav li a:hover {
+  color: #fbdabb;
+}
+
+.item {
+  margin-top: 2rem;
+}
+
+.icon {
+  font-size: 1.25rem;
+  margin-right: 0.3rem;
+}
+
+.copyright {
+  width: 80%;
+  height: 12%;
+  margin: 0 auto;
+  padding: 0.8rem 0;
+
+  display: flex;
+  justify-content: center;
+  color: #edefee;
+  font-family: "Markazi Text", serif;
+}
