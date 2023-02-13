@@ -1,47 +1,83 @@
+import { Link } from "react-router-dom";
+import classes from "./Footer.module.css";
+import Logo from "./assets/Logo.svg";
+
+import { TfiLocationPin } from "react-icons/tfi";
+import { SlPhone, SlEnvelopeOpen } from "react-icons/sl";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+
 function Footer() {
   return (
-    <footer>
-      <nav>
-        <section>
-          <h1>Doormat Navigation</h1>
+    <footer className={classes.footer}>
+      <nav className={classes.bottNav}>
+        <section className={classes.logo}>
+          <Link to="/">
+            <img src={Logo} alt="Little Lemon Logo" />
+          </Link>
+        </section>
+        <section className={classes.item}>
+          <h1>Useful Links</h1>
           <ul>
             <li>
-              <a href="/home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="/menu">Menu</a>
+              <Link to="/menu">Menu</Link>
             </li>
             <li>
-              <a href="/reservations">Reservations</a>
+              <Link to="/reservations">Reservations</Link>
             </li>
             <li>
-              <a href="/orderonline">Order Online</a>
+              <Link to="/orderonline">Order Online</Link>
             </li>
             <li>
-              <a href="/login">Login</a>
+              <Link to="/login">Login</Link>
             </li>
           </ul>
         </section>
-        <section>
-          <h1>Contact</h1>
+        <section className={classes.item}>
+          <h1>Contacts</h1>
           <ul>
-            <li>Address</li>
-            <li>Phone Number</li>
-            <li>Email</li>
+            <li>
+              <TfiLocationPin className={classes.icon} /> 132, My FoodStreet,
+              Chicago
+            </li>
+            <li>
+              <SlPhone className={classes.icon} /> +1 (508) 767-1176
+            </li>
+            <li>
+              <SlEnvelopeOpen className={classes.icon} />{" "}
+              inquiries@littlelemon.com
+            </li>
           </ul>
         </section>
-        <section>
+        <section className={classes.item}>
           <h1>Social Media Links</h1>
           <ul>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
+            <li>
+              <a href="littlelemon@instagram.com">
+                <BsInstagram className={classes.icon} />
+              </a>
+            </li>
+            <li>
+              <a href="littlelemon@facebook.com">
+                <BsFacebook className={classes.icon} />
+              </a>
+            </li>
+            <li>
+              <a href="littlelemon@twitter.com">
+                <BsTwitter className={classes.icon} />
+              </a>
+            </li>
           </ul>
         </section>
       </nav>
+      <section className={classes.copyright}>
+        <span>&copy; Little Lemon 2023 | All Rights Reserved</span>
+      </section>
     </footer>
   );
 }
