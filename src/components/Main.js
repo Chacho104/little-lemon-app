@@ -1,8 +1,9 @@
 import classes from "./Main.module.css";
+import MenuHighlightSection from "./MenuHighlight";
 
 function Main() {
   return <main className={classes.main}>
-    <h1>This Week's Special</h1>
+    <MenuHighlightSection />
     <h1>Testimonials</h1>
     <h1>About</h1>
   </main>;
