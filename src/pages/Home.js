@@ -1,12 +1,10 @@
 import { Fragment } from "react";
-import Header from "../components/Header";
-import Main from "../components/Main";
+import HeroSection from "../components/Layout/HeroSection";
 
 function HomePage() {
   return (
     <Fragment>
-      <Header />
-      <Main />
+      <HeroSection />
     </Fragment>
   );
 }
