@@ -1,0 +1,28 @@
+.filtermeals {
+  margin-bottom: 2rem;
+}
+
+.mealsnav {
+  border-bottom: 1px solid #edefee;
+}
+
+.mealsnav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.mealsnav-items li a {
+  padding: 0.5rem 2rem;
+  color: #495e57;
+  border: 1px solid #495e57;
+  border-radius: 6rem;
+}
+
+.mealsnav-items li a:hover,
+.mealsnav-items li a.active {
+  color: #333;
+  background-color: #f4ce14;
+  border: none;
+}
