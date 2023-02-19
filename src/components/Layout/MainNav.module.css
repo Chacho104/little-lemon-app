@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  height: 5rem;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+}
+
+.nav-items {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 4rem;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+}
+
+.navList li {
+  padding: 0 1.25rem;
+}
+
+.navList li a {
+  color: #495e57;
+  font-family: "Markazi Text", serif;
+  font-size: 1.8rem;
+}
+
+.navList li a:hover,
+.navList li a.active {
+  color: #f4ce14;
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+}
