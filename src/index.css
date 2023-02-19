@@ -14,13 +14,23 @@ li {
 
 a {
   text-decoration: none;
+  color: #333333;
 }
 
-.center-content {
-  margin: 2rem auto;
+main {
+  font-family: "Karla", sans-serif;
+  color: #333333;
+  margin-bottom: 5rem;
+}
+
+main section {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.center {
   text-align: center;
-}
-
-.center-content h1 {
-  padding-bottom: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  line-height: 2;
 }
