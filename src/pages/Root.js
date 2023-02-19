@@ -1,14 +1,18 @@
 import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
-import Footer from "../components/Footer";
-import Nav from "../components/Nav";
+import Footer from "../components/Layout/Footer";
+import MainNav from "../components/Layout/MainNav";
 
 function RootLayout() {
-    return <Fragment>
-        <Nav />
+  return (
+    <Fragment>
+      <MainNav />
+      <main>
         <Outlet />
-        <Footer />
+      </main>
+      <Footer />
     </Fragment>
+  );
 }
 
 export default RootLayout;
