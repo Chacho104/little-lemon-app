@@ -6,17 +6,31 @@ function MealsNavigation() {
   return (
     <section className={classes.filtermeals}>
       <h1>Order for Delivery</h1>
+      <p>
+        Welcome to Little Lemon's Order Online space, a gem for those who love
+        to enjoy their meals in the comfort of their homes. Order easily from
+        the categories below, and we will deliver swiftly!
+      </p>
       <nav className={classes.mealsnav}>
         <ul className={classes["mealsnav-items"]}>
           <li>
             <NavLink
-              to=""
+              to="all-meals"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
-              end
             >
               All Meals
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="breakfast"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
+              Breakfast
             </NavLink>
           </li>
           <li>
