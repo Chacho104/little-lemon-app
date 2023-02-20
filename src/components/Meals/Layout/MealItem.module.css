@@ -1,0 +1,24 @@
+.meal-item {
+    width: 60%;
+    height: auto;
+    margin: 3rem auto;
+}
+
+.meal-item img {
+    width: 100%;
+    height: 20rem;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.details {
+    padding: 1rem 0.5rem;
+}
+
+.details h2 {
+    margin-bottom: 0.5rem;
+}
+
+.details p {
+    color: #495e57;
+}
