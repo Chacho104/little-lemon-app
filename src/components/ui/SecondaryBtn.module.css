@@ -1,0 +1,16 @@
+.delivery {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery a {
+    border: 1px solid #495e57;
+    border-radius: 2rem;
+    padding: 0.2rem 0.8rem;
+    background-color: #edefee;
+}
+
+.delivery a:hover {
+    background-color: #fff;
+}
