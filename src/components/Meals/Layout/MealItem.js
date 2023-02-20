@@ -1,8 +1,19 @@
+import SecondaryBtn from "../../UI/SecondaryBtn";
+import classes from "./MealItem.module.css";
+
 function MealItem({ meal }) {
   return (
     <section>
-      <h1>{meal.title}</h1>
-      <p>Time to customize your order and add to basket!</p>
+      <div className={classes["meal-item"]}>
+        <div>
+          <img src={"/" + meal.image} alt={`Delicious ${meal.title}`} />
+        </div>
+        <div className={classes.details}>
+          <h2>{meal.title}</h2>
+          <p>{meal.description}</p>
+          <SecondaryBtn link={".."}  />
+        </div>
+      </div>
     </section>
   );
 }
