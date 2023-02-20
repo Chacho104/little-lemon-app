@@ -2,6 +2,12 @@
   margin-bottom: 2rem;
 }
 
+.filtermeals p {
+  color: #495e57;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
 .mealsnav {
   border-bottom: 1px solid #edefee;
 }
