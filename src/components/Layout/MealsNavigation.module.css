@@ -9,14 +9,14 @@
 }
 
 .mealsnav {
-  border-bottom: 1px solid #edefee;
+  border-bottom: 1px solid #d4d6d5;
 }
 
 .mealsnav-items {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .mealsnav-items li a {
