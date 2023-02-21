@@ -1,0 +1,21 @@
+.formbtn {
+  cursor: pointer;
+  color: #333333;
+  font-family: "Karla", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #f4ce14;
+  border: 1px solid #f4ce14;
+  border-radius: 2rem;
+  padding: 0.6rem 1.5rem;
+  width: 100%;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.formbtn:hover,
+.formbtn:active {
+  background-color: #ccac0f;
+  border-color: #ccac0f;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
