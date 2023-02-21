@@ -1,24 +1,30 @@
 .meal-item {
-    width: 60%;
-    height: auto;
-    margin: 3rem auto;
+  width: 55%;
+  height: auto;
+  margin: 3rem auto;
+  border: 1px solid #edefee;
+  border-radius: 2rem;
 }
 
 .meal-item img {
-    width: 100%;
-    height: 20rem;
-    border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem;
+  width: 100%;
+  height: 18.75rem;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
 }
 
 .details {
-    padding: 1rem 0.5rem;
+  padding: 1.5rem 2rem 0rem 2rem;
+}
+
+.customize {
+  padding: 0 2rem;
 }
 
 .details h2 {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .details p {
-    color: #495e57;
+  color: #495e57;
 }
