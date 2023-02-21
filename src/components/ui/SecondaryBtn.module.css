@@ -1,7 +1,8 @@
 .delivery {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .delivery a {
@@ -9,6 +10,7 @@
     border-radius: 2rem;
     padding: 0.2rem 0.8rem;
     background-color: #edefee;
+    color: #495e57;
 }
 
 .delivery a:hover {
