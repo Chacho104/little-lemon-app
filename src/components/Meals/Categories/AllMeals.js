@@ -8,7 +8,6 @@ function AllMeals() {
 
 export default AllMeals;
 
-
 export async function loader() {
   const response = await fetch(
     "https://little-lemon-project-default-rtdb.firebaseio.com/meals.json"
