@@ -15,9 +15,8 @@ import LunchMeals from "./components/Meals/Categories/LunchMeals";
 import MainMeals from "./components/Meals/Categories/MainMeals";
 import Desserts from "./components/Meals/Categories/Desserts";
 import SpecialMeals from "./components/Meals/Categories/SpecialMeals";
-import MealDetails, {
-  loader as toppingsLoader,
-} from "./components/Meals/Categories/MealDetails";
+import MealDetails from "./components/Meals/Categories/MealDetails";
+import BasketPage from "./pages/Checkout";
 
 function App() {
   const router = createBrowserRouter([
@@ -41,9 +40,8 @@ function App() {
               children: [
                 { index: true, element: <AllMeals /> },
                 {
-                  path: ":mealId",
+                  path: ":mealTitle",
                   element: <MealDetails />,
-                  loader: toppingsLoader,
                 },
               ],
             },
@@ -52,9 +50,8 @@ function App() {
               children: [
                 { index: true, element: <BreakfastMeals /> },
                 {
-                  path: ":mealId",
+                  path: ":mealTitle",
                   element: <MealDetails />,
-                  loader: toppingsLoader,
                 },
               ],
             },
@@ -63,9 +60,8 @@ function App() {
               children: [
                 { index: true, element: <LunchMeals /> },
                 {
-                  path: ":mealId",
+                  path: ":mealTitle",
                   element: <MealDetails />,
-                  loader: toppingsLoader,
                 },
               ],
             },
@@ -74,9 +70,8 @@ function App() {
               children: [
                 { index: true, element: <MainMeals /> },
                 {
-                  path: ":mealId",
+                  path: ":mealTitle",
                   element: <MealDetails />,
-                  loader: toppingsLoader,
                 },
               ],
             },
@@ -85,9 +80,8 @@ function App() {
               children: [
                 { index: true, element: <Desserts /> },
                 {
-                  path: ":mealId",
+                  path: ":mealTitle",
                   element: <MealDetails />,
-                  loader: toppingsLoader,
                 },
               ],
             },
@@ -96,15 +90,15 @@ function App() {
               children: [
                 { index: true, element: <SpecialMeals /> },
                 {
-                  path: ":mealId",
+                  path: ":mealTitle",
                   element: <MealDetails />,
-                  loader: toppingsLoader,
                 },
               ],
             },
           ],
         },
         { path: "login", element: <LoginPage /> },
+        { path: "basket", element: <BasketPage /> },
       ],
     },
   ]);
