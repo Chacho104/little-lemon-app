@@ -32,7 +32,7 @@
 }
 
 .button:hover .badge,
-.button:active .badge {
+.button.active .badge {
   color: #f4ce14;
 }
 
