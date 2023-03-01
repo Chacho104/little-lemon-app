@@ -1,35 +1,37 @@
-import FormButton from "../../UI/FormButton";
+import { useRef, useState } from "react";
 import Input from "../../UI/Input";
 import classes from "./MealItemForm.module.css";
+import FormButton from "../../UI/FormButton";
 
-function MealItemForm({ additions, meal }) {
+function MealItemForm(props) {
+  const [amountIsValid, setAmountIsValid] = useState(true);
+  const amountInputRef = useRef();
+
+  function submitHandler(event) {
+    event.preventDefault();
+
+    const enteredAmount = amountInputRef.current.value;
+    const enteredAmountNumber = +enteredAmount;
+
+    if (
+      enteredAmount.trim().length === 0 ||
+      enteredAmountNumber < 1 ||
+      enteredAmountNumber > 5
+    ) {
+      setAmountIsValid(false);
+      return;
+    }
+
+    props.onAddToCart(enteredAmountNumber);
+  }
   return (
-    <form className={classes.form}>
-      <h2>Add</h2>
-      <div>
-        <ul>
-          {additions.map((addition) => (
-            <Input
-              key={addition.title}
-              label={
-                <div className={classes.label}>
-                  <span>{addition.title}</span>
-                  <span>${addition.price.toFixed(2)}</span>
-                </div>
-              }
-              input={{
-                id: addition.title,
-                type: "radio",
-              }}
-            />
-          ))}
-        </ul>
-      </div>
+    <form className={classes.form} onSubmit={submitHandler}>
       <div>
         <Input
-          label="No. of Servings"
+          ref={amountInputRef}
+          label="Amount"
           input={{
-            id: "amount_" + meal.id,
+            id: "amount_" + props.meal.id,
             type: "number",
             min: "1",
             max: "5",
@@ -39,7 +41,8 @@ function MealItemForm({ additions, meal }) {
         />
       </div>
       <div className={classes.action}>
-        <FormButton>Add to Basket for ${meal.price.toFixed(2)}</FormButton>
+        <FormButton>Add to Basket</FormButton>
+        {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
       </div>
     </form>
   );
