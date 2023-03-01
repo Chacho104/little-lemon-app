@@ -7,7 +7,7 @@ function MealsList({ meals }) {
       <ul>
         {meals.map((meal) => (
           <li key={meal.id}>
-            <Link to={meal.id} className={classes.item}>
+            <Link to={meal.title} className={classes.item}>
               <div className={classes["item-content"]}>
                 <h3>{meal.title}</h3>
                 <p>{meal.description}</p>
