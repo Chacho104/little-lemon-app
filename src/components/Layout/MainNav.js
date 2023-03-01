@@ -6,7 +6,7 @@ import NavBasketButton from "./NavBasketButton";
 function MainNav() {
   return (
     <header className={classes.header}>
-      <nav className={classes['nav-items']}>
+      <nav className={classes["nav-items"]}>
         <span className={classes.logo}>
           <Link to="/">
             <img src={Logo} alt="Little Lemon Logo" />
@@ -74,7 +74,11 @@ function MainNav() {
             </NavLink>
           </li>
         </ul>
-        <NavBasketButton />
+        <span className={classes.basket}>
+          <NavLink to="basket">
+            <NavBasketButton />
+          </NavLink>
+        </span>
       </nav>
     </header>
   );
