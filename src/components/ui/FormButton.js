@@ -2,7 +2,7 @@ import classes from "./FormButton.module.css";
 
 function FormButton(props) {
   return (
-    <button onClick={props.Onclick} className={classes.formbtn}>
+    <button className={classes.formbtn}>
       {props.children}
     </button>
   );
