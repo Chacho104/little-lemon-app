@@ -65,12 +65,12 @@ function MealsNavigation() {
           </li>
           <li>
             <NavLink
-              to="specials"
+              to="drinks"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
             >
-              Specials
+              Drinks
             </NavLink>
           </li>
         </ul>
