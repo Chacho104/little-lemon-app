@@ -7,16 +7,16 @@ import MenuPage from "./pages/Menu";
 import ReservationsPage from "./pages/Reservations";
 import RootLayout from "./pages/Root";
 import OrderOnlineRootLayout from "./pages/OrderOnlineRoot";
+import BreakfastMeals from "./components/Meals/BreakfastMeals";
+import LunchMeals from "./components/Meals/LunchMeals";
+import MainMeals from "./components/Meals/MainMeals";
+import Desserts from "./components/Meals/Desserts";
+import MealDetails from "./components/Meals/MealDetails";
+import BasketPage from "./pages/Checkout";
+import Drinks from "./components/Meals/Drinks";
 import AllMeals, {
   loader as allMealsLoader,
-} from "./components/Meals/Categories/AllMeals";
-import BreakfastMeals from "./components/Meals/Categories/BreakfastMeals";
-import LunchMeals from "./components/Meals/Categories/LunchMeals";
-import MainMeals from "./components/Meals/Categories/MainMeals";
-import Desserts from "./components/Meals/Categories/Desserts";
-import SpecialMeals from "./components/Meals/Categories/SpecialMeals";
-import MealDetails from "./components/Meals/Categories/MealDetails";
-import BasketPage from "./pages/Checkout";
+} from "./components/Meals/AllMeals";
 
 function App() {
   const router = createBrowserRouter([
@@ -86,9 +86,9 @@ function App() {
               ],
             },
             {
-              path: "specials",
+              path: "drinks",
               children: [
-                { index: true, element: <SpecialMeals /> },
+                { index: true, element: <Drinks /> },
                 {
                   path: ":mealTitle",
                   element: <MealDetails />,
