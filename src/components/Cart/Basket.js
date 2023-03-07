@@ -12,12 +12,12 @@ function Basket(props) {
 
   const hasItems = cartCtx.items.length > 0;
 
-  const cartItemAddHandler = (item) => {
-    cartCtx.addItem({ ...item, amount: 1 });
-  };
-
   const cartItemRemoveHandler = (id) => {
     cartCtx.removeItem(id);
+  };
+
+  const cartItemAddHandler = (item) => {
+    cartCtx.addItem({ ...item, amount: 1 });
   };
 
   const basketItems = (
@@ -28,8 +28,8 @@ function Basket(props) {
           title={item.title}
           amount={item.amount}
           price={item.price}
-          onAdd={cartItemAddHandler.bind(null, item)}
           onRemove={cartItemRemoveHandler.bind(null, item.id)}
+          onAdd={cartItemAddHandler.bind(null, item)}
         />
       ))}
     </ul>
@@ -38,7 +38,12 @@ function Basket(props) {
   return (
     <section className={classes.basket}>
       <div>
-        {hasItems && <SecondaryBtn link={"/orderonline"} />}
+        {hasItems && (
+          <SecondaryBtn
+            link={"/orderonline/all-meals"}
+            action={"Add More Meals"}
+          />
+        )}
       </div>
       <div className={classes["basket-items"]}>{basketItems}</div>
       <div className={classes.total}>
@@ -46,7 +51,7 @@ function Basket(props) {
         <span>{totalAmount}</span>
       </div>
       <div className={classes.actions}>
-        <Button>Close</Button>
+        <Button link="/orderonline/all-meals">Close</Button>
         {hasItems && <Button>Checkout</Button>}
       </div>
     </section>
