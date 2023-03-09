@@ -4,8 +4,9 @@ import SecondaryBtn from "../UI/SecondaryBtn";
 import { useContext } from "react";
 import CartContext from "../../store/cart-context";
 import BasketItem from "./BasketItem";
+import Input from "../UI/Input";
 
-function Basket(props) {
+function Basket() {
   const cartCtx = useContext(CartContext);
 
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
@@ -45,14 +46,28 @@ function Basket(props) {
           />
         )}
       </div>
+      {hasItems && (
+        <div>
+          <h3>Cutlery</h3>
+          <Input
+            label="Help reduce plastic waste. Only ask for cutlery if you need it."
+            input={{ type: "checkbox" }}
+          />
+        </div>
+      )}
+      {hasItems && <h1>Order Summary</h1>}
       <div className={classes["basket-items"]}>{basketItems}</div>
       <div className={classes.total}>
         <span>Total Amount</span>
         <span>{totalAmount}</span>
       </div>
       <div className={classes.actions}>
-        <Button link="/orderonline/all-meals">Close</Button>
-        {hasItems && <Button>Checkout</Button>}
+        <div className={classes.close}>
+          <Button link="/orderonline/all-meals">Close</Button>
+        </div>
+        <div className={classes.proceed}>
+          {hasItems && <Button link="/checkout">Checkout</Button>}
+        </div>
       </div>
     </section>
   );
