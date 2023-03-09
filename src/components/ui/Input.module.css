@@ -3,9 +3,14 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #edefee;
+  padding: 0.5rem 0;
 }
 
 .input label {
   width: 95%;
   padding: 0.75rem 0;
+}
+
+.input input {
+  cursor: pointer;
 }
