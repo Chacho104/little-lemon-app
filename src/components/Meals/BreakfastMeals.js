@@ -3,7 +3,7 @@ import MealsList from "./MealsList";
 
 function BreakfastMeals() {
   const meals = useRouteLoaderData("root");
-  const breakfastMeals = meals.filter((meal) => meal.category === "Breakfast");
+  const breakfastMeals = meals.filter((meal) => meal.category === "breakfast");
 
   return (
     <section>
