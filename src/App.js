@@ -5,7 +5,7 @@ import HomePage from "./pages/Home";
 import LoginPage from "./pages/Login";
 import MenuPage from "./pages/Menu";
 import ReservationsPage from "./pages/Reservations";
-import RootLayout from "./pages/Root";
+import RootLayout, { loader as allMealsLoader } from "./pages/Root";
 import OrderOnlineRootLayout from "./pages/OrderOnlineRoot";
 import BreakfastMeals from "./components/Meals/BreakfastMeals";
 import LunchMeals from "./components/Meals/LunchMeals";
@@ -14,9 +14,7 @@ import Desserts from "./components/Meals/Desserts";
 import MealDetails from "./components/Meals/MealDetails";
 import BasketPage from "./pages/Checkout";
 import Drinks from "./components/Meals/Drinks";
-import AllMeals, {
-  loader as allMealsLoader,
-} from "./components/Meals/AllMeals";
+import AllMeals from "./components/Meals/AllMeals";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +22,8 @@ function App() {
       path: "/",
       element: <RootLayout />,
       errorElement: <ErrorPage />,
+      loader: allMealsLoader,
+      id: "root",
       children: [
         { index: true, element: <HomePage /> },
         { path: "about", element: <AboutPage /> },
@@ -32,8 +32,6 @@ function App() {
         {
           path: "orderonline",
           element: <OrderOnlineRootLayout />,
-          loader: allMealsLoader,
-          id: "root",
           children: [
             {
               path: "all-meals",
