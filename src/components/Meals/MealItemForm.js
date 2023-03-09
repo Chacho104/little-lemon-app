@@ -27,6 +27,12 @@ function MealItemForm(props) {
   return (
     <form className={classes.form} onSubmit={submitHandler}>
       <div>
+        <h2>Add</h2>
+        <Input label="Feta" input={{type: "checkbox"}} />
+        <Input label="Parmesan" input={{type: "checkbox"}} />
+        <Input label="Dressing" input={{type: "checkbox"}} />
+      </div>
+      <div>
         <Input
           ref={amountInputRef}
           label="Amount"
