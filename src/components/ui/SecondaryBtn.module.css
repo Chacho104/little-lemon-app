@@ -3,6 +3,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #edefee;
+}
+
+.time {
+  display: flex;
+}
+
+.time svg {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+  color: #495e57;
 }
 
 .delivery a {
