@@ -1,0 +1,14 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 2rem;
+  color: #495e57;
+}
+
+.highlights {
+  margin-top: 4rem;
+}
