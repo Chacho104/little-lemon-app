@@ -1,0 +1,33 @@
+.testimonial {
+  padding: 1.5rem 1.25rem;
+}
+
+.testimonial-svg,
+.testimonial-content {
+  margin: 1rem 0;
+  color: #495e57;
+}
+
+.testimonial-svg svg {
+  color: #f4ce14;
+  font-size: 1.25rem;
+}
+
+.testimonial-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-user p {
+  color: #495e57;
+  padding: 0.5rem 0;
+}
+
+.testimonial-user img {
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 2px solid #495e57;
+  border-radius: 6.25rem;
+}
