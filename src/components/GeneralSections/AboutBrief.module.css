@@ -1,0 +1,43 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.content h1 {
+  color: #f4ce14;
+  font-size: 4rem;
+  font-family: "Markazi Text", serif;
+}
+
+.content h2 {
+  font-family: "Markazi Text", serif;
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.content p {
+  color: #495e57;
+  padding: 0.75rem 0;
+}
+
+.content a:hover {
+  color: #f4ce14;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.owners-img {
+  display: flex;
+}
+
+.owners-img .firstImage {
+  margin-top: 6rem;
+  margin-right: -4rem;
+}
+
+.owners-img img {
+  width: 18rem;
+  height: 22rem;
+  border-radius: 1.5rem;
+}
