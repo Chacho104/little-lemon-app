@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AboutPage from "./pages/About";
 import ErrorPage from "./pages/Error";
-import HomePage from "./pages/Home";
+import HomePage, { loader as testimonialsLoader } from "./pages/Home";
 import LoginPage from "./pages/Login";
 import MenuPage from "./pages/Menu";
 import ReservationsPage from "./pages/Reservations";
@@ -25,7 +25,7 @@ function App() {
       loader: allMealsLoader,
       id: "root",
       children: [
-        { index: true, element: <HomePage /> },
+        { index: true, element: <HomePage />, loader: testimonialsLoader },
         { path: "about", element: <AboutPage /> },
         { path: "menu", element: <MenuPage /> },
         { path: "reservations", element: <ReservationsPage /> },
