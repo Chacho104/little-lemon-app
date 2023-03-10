@@ -1,8 +1,12 @@
 .card {
-    background-color: #edefee;
-    border-radius: 1.25rem;
+  background-color: #edefee;
+  border-radius: 1.25rem;
+  width: 19rem;
+  height: auto;
+  min-height: 21rem;
+  margin-bottom: 2rem;
 }
 
 .card:hover {
-    box-shadow: none;
+  box-shadow: none;
 }
