@@ -6,7 +6,7 @@ import Card from "../UI/Card";
 function SpecialMealItem(props) {
   return (
     <Card>
-      <li className={classes["meal-item"]}>
+      <li>
         <div className={classes["meal-image"]}>
           <img src={"/" + props.image} alt={`Delicious ${props.title}`} />
         </div>
