@@ -1,5 +1,14 @@
+import { Fragment } from "react";
+import About from "../components/GeneralSections/About";
+import AboutPageHero from "../components/GeneralSections/AboutPageHero";
+
 function AboutPage() {
-    return <h1>This is the About Page</h1>
+  return (
+    <Fragment>
+      <AboutPageHero />
+      <About />
+    </Fragment>
+  );
 }
 
 export default AboutPage;
