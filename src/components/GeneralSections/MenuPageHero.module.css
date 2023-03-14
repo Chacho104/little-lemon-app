@@ -1,0 +1,9 @@
+.hero {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.hero img {
+  width: 100%;
+  height: 60vh;
+}
