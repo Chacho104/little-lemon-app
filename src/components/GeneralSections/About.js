@@ -13,24 +13,25 @@ import Chef from "../../assets/headchef2.jpg";
 
 function About() {
   return (
-    <section>
-      <div className={classes.about}>
-        <h1>About Little Lemon</h1>
+    <section className={classes.about}>
+      <h1>About</h1>
+      <div className={classes.description}>
         <p>
-          Little Lemon (inspired by the richness of little mediterranean lemons)
-          is a vibrant Chicago restaturant focused on serving traditional
-          recipes in a modern setting. Little Lemon celebrates the best of
-          traditional Mediterranean dishes with irresistible hospitality and
-          service. We strive to make everyone feel comfortable at Little Lemon.
-          Yes, everyone. Even those who prefer to stay indoors can still enjoy
-          our dishes through the swift and reliable{" "}
-          <Link to="/orderonline">order online service</Link>. Families and
+          Little Lemon (co-founded by the formidable duo, Mario Stefano and
+          Adrian Demphris) is a vibrant Chicago restaturant focused on serving
+          traditional recipes in a modern setting. Little Lemon celebrates the
+          best of traditional Mediterranean dishes with irresistible hospitality
+          and service. We strive to make everyone feel comfortable at Little
+          Lemon. Yes, everyone. Even those who prefer to stay indoors can still
+          enjoy our dishes through the swift and reliable{" "}
+          <Link to="/menu">order online service</Link>. Families and
           groups are also catered for. Just{" "}
           <Link to="/reservations">reserve a table</Link> the size of your
           family or group and come enjoy the ambience and delicious food at
           Little Lemon.
         </p>
       </div>
+      <h1>Locations & Opening Hours</h1>
       <div className={classes.branch}>
         <div>
           <img
@@ -85,8 +86,8 @@ function About() {
           />
         </div>
       </div>
+      <h1>The Team</h1>
       <div className={classes.team}>
-        <h1>The Team</h1>
         <div className={classes.members}>
           <div className={classes.member}>
             <img src={MarioImage} alt="Co-founder Mario Stefano" />
