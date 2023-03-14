@@ -2,13 +2,13 @@ import { Fragment } from "react";
 import { json } from "react-router-dom";
 import AboutBrief from "../components/GeneralSections/AboutBrief";
 import Testimonials from "../components/GeneralSections/Testimonials";
-import HeroSection from "../components/Layout/HeroSection";
+import MainHeroSection from "../components/Layout/MainHeroSection";
 import Specials from "../components/Meals/Specials";
 
 function HomePage() {
   return (
     <Fragment>
-      <HeroSection />
+      <MainHeroSection />
       <div>
         <Specials />
         <Testimonials />
