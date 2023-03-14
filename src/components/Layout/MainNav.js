@@ -55,12 +55,12 @@ function MainNav() {
           </li>
           <li>
             <NavLink
-              to="orderonline"
+              to="gallery"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
             >
-              Order Online
+              Gallery
             </NavLink>
           </li>
           <li>
