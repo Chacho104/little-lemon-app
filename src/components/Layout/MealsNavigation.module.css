@@ -2,10 +2,19 @@
   margin-bottom: 2rem;
 }
 
+.filtermeals h1 {
+  font-size: 2rem;
+  color: #495e57;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
 .filtermeals p {
   color: #495e57;
   margin: 1rem 0;
+  font-size: 1.125rem;
   line-height: 1.5;
+  text-align: center;
 }
 
 .mealsnav {
@@ -20,7 +29,7 @@
 }
 
 .mealsnav-items li a {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1.5rem;
   color: #495e57;
   border: 1px solid #495e57;
   border-radius: 6rem;
