@@ -1,0 +1,110 @@
+.about {
+  margin: 4rem;
+  text-align: center;
+}
+
+.about h1,
+.team h1 {
+  padding: 2rem 0;
+  font-size: 2.5rem;
+  color: #495e57;
+  text-align: center;
+}
+
+.about p {
+  text-align: center;
+  padding: 0 4rem;
+  line-height: 1.75;
+  font-size: 1.15rem;
+  color: #333;
+}
+
+.about p a {
+  color: #495e57;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.about p a:hover {
+  color: #f4ce14;
+}
+
+.branch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.branch img {
+  width: 28rem;
+  height: 34rem;
+  margin: 4rem 0;
+}
+
+.content {
+  width: 30rem;
+  height: auto;
+  max-height: 34rem;
+  padding: 2rem;
+  line-height: 1.5;
+  font-size: 1.15rem;
+  border: 2px solid #495e57;
+}
+
+.content p {
+  padding: 0.75rem 0;
+}
+
+.content h2 {
+  color: #495e57;
+}
+
+.contact .contact-item {
+  margin: 0.5rem 0;
+}
+
+.contact .icon {
+  color: #495e57;
+  font-size: 1.25rem;
+  margin-right: 0.4rem;
+  font-weight: 600;
+}
+
+.contact span {
+  font-size: 1.025rem;
+}
+
+.members {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.member {
+  border: 1px solid #edefee;
+  cursor: pointer;
+  width: 18rem;
+  height: auto;
+  min-height: 27rem;
+}
+
+.member img {
+    width: 100%;
+    height: 21rem;
+}
+
+.member h3 {
+  padding: 1rem 1.5rem;
+}
+
+.member p {
+    padding: 0 1.5rem;
+    color: #495e57;
+}
+
+.member:hover {
+    border: 1px solid #333;
+}
