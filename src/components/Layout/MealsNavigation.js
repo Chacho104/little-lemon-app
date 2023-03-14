@@ -2,27 +2,13 @@ import { NavLink } from "react-router-dom";
 
 import classes from "./MealsNavigation.module.css";
 
-function MealsNavigation() {
+function MealsNavigation(props) {
   return (
     <section className={classes.filtermeals}>
-      <h1>Order for Delivery</h1>
-      <p>
-        Welcome to Little Lemon's Order Online space, a gem for those who love
-        to enjoy their meals in the comfort of their homes. Pick your favorite(s) from
-        the categories below, and we will deliver swiftly!
-      </p>
+      <h1>{props.title}</h1>
+      {props.message}
       <nav className={classes.mealsnav}>
         <ul className={classes["mealsnav-items"]}>
-          <li>
-            <NavLink
-              to="all-meals"
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-            >
-              All Meals
-            </NavLink>
-          </li>
           <li>
             <NavLink
               to="breakfast"
@@ -65,12 +51,32 @@ function MealsNavigation() {
           </li>
           <li>
             <NavLink
-              to="drinks"
+              to="beverages"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
             >
-              Drinks
+              Beverages
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="wines"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
+              Wines & Cocktails
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="juices"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
+              Juices
             </NavLink>
           </li>
         </ul>
