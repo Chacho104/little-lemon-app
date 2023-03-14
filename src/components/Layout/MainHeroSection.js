@@ -1,9 +1,9 @@
-import classes from "./HeroSection.module.css";
+import classes from "./MainHeroSection.module.css";
 
 import HeroImg from "../../assets/restauranfood.jpg";
 import Button from "../UI/Button";
 
-function HeroSection() {
+function MainHeroSection() {
   return (
     <main className={classes['hero-section']}>
       <section className={classes.hero}>
@@ -24,4 +24,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default MainHeroSection;
