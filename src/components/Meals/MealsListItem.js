@@ -4,7 +4,7 @@ import classes from "./MealsListItem.module.css";
 function MealsListItem(props) {
   return (
     <li>
-      <Link to={props.title} className={classes.item}>
+      <Link to={props.title} className={classes.item} preventScrollReset={true}>
         <div className={classes["item-content"]}>
           <h3>{props.title}</h3>
           <p>{props.description}</p>
