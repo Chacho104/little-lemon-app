@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import classes from "./About.module.css";
-import LocationImage1 from "../../assets/chicago1.jpg";
+import LocationImage1 from "../../assets/restaurant.jpg";
 import LocationImage2 from "../../assets/chicago2.jpg";
 import { TfiLocationPin } from "react-icons/tfi";
 import { BsClockHistory } from "react-icons/bs";
