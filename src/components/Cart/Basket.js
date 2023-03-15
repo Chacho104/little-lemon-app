@@ -41,7 +41,7 @@ function Basket() {
       <div>
         {hasItems && (
           <SecondaryBtn
-            link={"/orderonline/all-meals"}
+            link={"/menu"}
             action={"Add More Meals"}
           />
         )}
@@ -63,7 +63,7 @@ function Basket() {
       </div>
       <div className={classes.actions}>
         <div className={classes.close}>
-          <Button link="/orderonline/all-meals">Close</Button>
+          <Button link="/menu">Close</Button>
         </div>
         <div className={classes.proceed}>
           {hasItems && <Button link="/checkout">Checkout</Button>}
