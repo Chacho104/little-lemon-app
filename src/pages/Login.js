@@ -1,5 +1,7 @@
+import FormPageBackground from "../components/Layout/FormPageBackground";
+
 function LoginPage() {
-  return <h1>This is the Login Page</h1>;
+  return <FormPageBackground></FormPageBackground>;
 }
 
 export default LoginPage;
