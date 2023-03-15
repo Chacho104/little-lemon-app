@@ -20,12 +20,11 @@ a {
 main {
   font-family: "Karla", sans-serif;
   color: #333333;
-  margin-bottom: 5rem;
 }
 
 main section {
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 5rem;
 }
 
 .center {
