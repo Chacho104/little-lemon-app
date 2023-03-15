@@ -1,5 +1,12 @@
+import FormPageBackground from "../components/Layout/FormPageBackground";
+import BookingForm from "../components/UI/BookingForm";
+
 function ReservationsPage() {
-    return <h1>This is the Reservations Page</h1>
+  return (
+    <FormPageBackground>
+      <BookingForm />
+    </FormPageBackground>
+  );
 }
 
 export default ReservationsPage;
