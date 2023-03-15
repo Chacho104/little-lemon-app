@@ -11,7 +11,9 @@ function SecondaryBtn(props) {
           Delivery in <strong>30 minutes</strong>
         </p>
       </div>
-      <Link to={props.link}>{props.action}</Link>
+      <Link to={props.link} preventScrollReset={true}>
+        {props.action}
+      </Link>
     </div>
   );
 }
