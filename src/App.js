@@ -12,10 +12,10 @@ import Desserts from "./components/Meals/Desserts";
 import MealDetails from "./components/Meals/MealDetails";
 import BasketPage from "./pages/Checkout";
 import MenuRootLayout from "./pages/MenuRoot";
-import Gallery from "./pages/Gallery";
 import Beverages from "./components/Meals/Beverages";
 import Wines from "./components/Meals/Wines";
 import Juices from "./components/Meals/Juices";
+import Signup from "./pages/Signup";
 
 function App() {
   const router = createBrowserRouter([
@@ -105,8 +105,8 @@ function App() {
           ],
         },
         { path: "reservations", element: <ReservationsPage /> },
-        { path: "gallery", element: <Gallery /> },
         { path: "login", element: <LoginPage /> },
+        { path: "signup", element: <Signup /> },
         { path: "basket", element: <BasketPage /> },
       ],
     },
