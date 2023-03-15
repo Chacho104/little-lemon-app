@@ -15,6 +15,7 @@ function MealsNavigation(props) {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              preventScrollReset={true}
             >
               Breakfast
             </NavLink>
@@ -25,6 +26,7 @@ function MealsNavigation(props) {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              preventScrollReset={true}
             >
               Lunch
             </NavLink>
@@ -35,6 +37,7 @@ function MealsNavigation(props) {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              preventScrollReset={true}
             >
               Mains
             </NavLink>
@@ -45,6 +48,7 @@ function MealsNavigation(props) {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              preventScrollReset={true}
             >
               Desserts
             </NavLink>
@@ -55,6 +59,7 @@ function MealsNavigation(props) {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              preventScrollReset={true}
             >
               Beverages
             </NavLink>
@@ -65,6 +70,7 @@ function MealsNavigation(props) {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              preventScrollReset={true}
             >
               Wines & Cocktails
             </NavLink>
@@ -75,6 +81,7 @@ function MealsNavigation(props) {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              preventScrollReset={true}
             >
               Juices
             </NavLink>
