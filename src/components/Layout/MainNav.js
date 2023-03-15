@@ -55,22 +55,22 @@ function MainNav() {
           </li>
           <li>
             <NavLink
-              to="gallery"
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-            >
-              Gallery
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
               to="login"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
             >
               Login
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="signup"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
+              Sign Up
             </NavLink>
           </li>
         </ul>
