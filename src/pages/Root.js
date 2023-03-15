@@ -1,4 +1,4 @@
-import { json, Outlet } from "react-router-dom";
+import { json, Outlet, ScrollRestoration } from "react-router-dom";
 import Footer from "../components/Layout/Footer";
 import MainNav from "../components/Layout/MainNav";
 import CartProvider from "../store/CartProvider";
@@ -6,6 +6,7 @@ import CartProvider from "../store/CartProvider";
 function RootLayout() {
   return (
     <CartProvider>
+      <ScrollRestoration />
       <MainNav />
       <main>
         <Outlet />
