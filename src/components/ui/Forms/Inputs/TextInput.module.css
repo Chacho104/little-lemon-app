@@ -1,0 +1,45 @@
+.input,
+.input-var {
+  margin-bottom: 1.5rem;
+}
+
+.input-var input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  color: #495e57;
+  font-size: 1.025rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.text-input {
+  background-color: #fff;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.text-input label {
+  color: #495e57;
+  font-size: 1.0025rem;
+}
+
+.text-input input {
+  border: 0.5px solid #495e57;
+  border-radius: 0.25rem;
+  padding: 0.2rem;
+  color: #495e57;
+}
+
+.text-input input[type="number"] {
+  width: 2.5rem;
+}
+
+.error {
+  color: #f6d2c0;
+}
