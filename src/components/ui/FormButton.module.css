@@ -6,10 +6,9 @@
   font-weight: bold;
   background-color: #f4ce14;
   border: 1px solid #f4ce14;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   padding: 0.6rem 1.5rem;
   width: 100%;
-  margin: 2rem 0;
   text-align: center;
 }
 
