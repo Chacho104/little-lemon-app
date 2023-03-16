@@ -8,7 +8,7 @@
 }
 
 .overlay {
-  background-image: linear-gradient(180deg, #000000 0%, #0000003c 80%);
+  background-image: linear-gradient(180deg, #000000 0%, #0000003c 100%);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
