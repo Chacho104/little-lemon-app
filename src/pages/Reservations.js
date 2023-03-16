@@ -1,10 +1,10 @@
 import FormPageBackground from "../components/Layout/FormPageBackground";
-import BookingForm from "../components/UI/BookingForm";
+import ReservationsForm from "../components/UI/Forms/FullForms/ReservationForm";
 
 function ReservationsPage() {
   return (
     <FormPageBackground>
-      <BookingForm />
+      <ReservationsForm />
     </FormPageBackground>
   );
 }
