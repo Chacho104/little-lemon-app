@@ -60,7 +60,7 @@ function MainNav() {
                 isActive ? classes.active : undefined
               }
             >
-              Login
+              Log In
             </NavLink>
           </li>
           <li>
