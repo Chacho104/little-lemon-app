@@ -33,3 +33,22 @@ main section {
   padding: 1rem;
   line-height: 2;
 }
+
+.form {
+  width: 30rem;
+}
+
+.form p {
+  padding: 1.5rem 0;
+  color: #fff;
+}
+
+.form p a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.form p a:hover {
+  color: #f4ce14;
+}
