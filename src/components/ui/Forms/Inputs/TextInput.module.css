@@ -14,6 +14,10 @@
   outline: none;
 }
 
+.input-var input.error {
+  border: 1px solid #ee9972;
+}
+
 .text-input {
   background-color: #fff;
   padding: 0.75rem 1rem;
@@ -34,12 +38,17 @@
   border-radius: 0.25rem;
   padding: 0.2rem;
   color: #495e57;
+  outline: none;
+}
+
+.text-input input.error {
+  border: 1px solid #ee9972;
 }
 
 .text-input input[type="number"] {
   width: 2.5rem;
 }
 
-.error {
+.error-message {
   color: #f6d2c0;
 }
