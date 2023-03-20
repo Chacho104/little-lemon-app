@@ -3,7 +3,7 @@ import AboutPage from "./pages/About";
 import ErrorPage from "./pages/Error";
 import HomePage, { loader as testimonialsLoader } from "./pages/Home";
 import LoginPage from "./pages/Login";
-import ReservationsPage from "./pages/Reservations";
+import BookingPage from "./pages/Booking";
 import RootLayout, { loader as allMealsLoader } from "./pages/Root";
 import BreakfastMeals from "./components/Meals/BreakfastMeals";
 import LunchMeals from "./components/Meals/LunchMeals";
@@ -104,7 +104,7 @@ function App() {
             },
           ],
         },
-        { path: "reservations", element: <ReservationsPage /> },
+        { path: "reservations", element: <BookingPage /> },
         { path: "login", element: <LoginPage /> },
         { path: "signup", element: <Signup /> },
         { path: "basket", element: <BasketPage /> },
