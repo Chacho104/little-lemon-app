@@ -5,7 +5,7 @@ const BookingContext = React.createContext({
   selectedTime: "",
   numOfGuests: 1,
   selectedOccassion: "",
-  makeBooking: (selectedTime, numOfGuests, selectedOccassion) => {},
+  makeBooking: (selectedDate, selectedTime, numOfGuests, selectedOccassion) => {},
   cancelBooking: (id) => {},
 });
 
