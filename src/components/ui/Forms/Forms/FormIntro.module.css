@@ -1,0 +1,15 @@
+.intro {
+  text-align: center;
+  padding-bottom: 3rem;
+  width: 30rem;
+}
+
+.intro h1 {
+  color: #f4ce14;
+  font-size: 3rem;
+  padding-bottom: 0.75rem;
+}
+
+.intro p {
+  color: #fff;
+}
