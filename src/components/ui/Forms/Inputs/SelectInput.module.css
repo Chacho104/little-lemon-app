@@ -22,6 +22,11 @@
   border-radius: 0.25rem;
   padding: 0.2rem;
   color: #495e57;
+  outline: none;
+}
+
+.select-input select.error {
+  border: 1px solid #ee9972;
 }
 
 .error {
