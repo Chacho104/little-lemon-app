@@ -9,19 +9,27 @@ function TextInput({ label, ...props }) {
       <div className={classes.input}>
         <div className={classes["text-input"]}>
           <label htmlFor={props.id || props.name}>{label}</label>
-          <input {...field} {...props} />
+          <input
+            className={meta.touched && meta.error ? classes.error : ""}
+            {...field}
+            {...props}
+          />
         </div>
         {meta.touched && meta.error ? (
-          <div className={classes.error}>{meta.error}</div>
+          <div className={classes["error-message"]}>{meta.error}</div>
         ) : null}
       </div>
     );
   } else {
     return (
-      <div className={classes['input-var']}>
-        <input {...field} {...props} />
+      <div className={classes["input-var"]}>
+        <input
+          className={meta.touched && meta.error ? classes.error : ""}
+          {...field}
+          {...props}
+        />
         {meta.touched && meta.error ? (
-          <div className={classes.error}>{meta.error}</div>
+          <div className={classes["error-message"]}>{meta.error}</div>
         ) : null}
       </div>
     );
