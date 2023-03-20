@@ -1,15 +1,22 @@
 import BookingContext from "./booking-context";
 
 const defaultBookingState = {
-  selectedTime: [],
+  selectedDate: "",
+  selectedTime: "",
   numOfGuests: 1,
-  selectedOccassion: [],
+  selectedOccassion: "",
 };
 
 function BoookingProvider(props) {
-  function makeBookingHandler(selectedTime, numOfGuests, selectedOccassion) {
+  function makeBookingHandler(
+    selectedDate,
+    selectedTime,
+    numOfGuests,
+    selectedOccassion
+  ) {
     dispatchBookingAction({
       type: "BOOK",
+      selectedDate: selectedDate,
       selectedTime: selectedTime,
       numOfGuests: numOfGuests,
       selectedOccassion: selectedOccassion,
@@ -20,6 +27,7 @@ function BoookingProvider(props) {
     dispatchBookingAction({ type: "CANCEL", id: id });
   }
   const bookingContext = {
+    selectedDate: selectedDate,
     selectedTime: bookingState.selectedTime,
     numOfGuests: bookingState.numOfGuests,
     selectedOccassion: bookingState.selectedOccassion,
