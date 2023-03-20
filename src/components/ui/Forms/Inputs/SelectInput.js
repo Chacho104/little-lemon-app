@@ -7,7 +7,11 @@ function SelectInput({ label, ...props }) {
     <div className={classes.input}>
       <div className={classes["select-input"]}>
         <label htmlFor={props.id || props.name}>{label}</label>
-        <select {...field} {...props} />
+        <select
+          className={meta.touched && meta.error ? classes.error : ""}
+          {...field}
+          {...props}
+        />
       </div>
       {meta.touched && meta.error ? (
         <div className={classes.error}>{meta.error}</div>
