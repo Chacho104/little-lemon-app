@@ -1,4 +1,4 @@
-import { Formik, Form } from "formik";
+import { Formik, Form, useFormikContext } from "formik";
 import { Fragment } from "react";
 import * as Yup from "yup";
 import TextInput from "../Inputs/TextInput";
@@ -6,34 +6,55 @@ import SelectInput from "../Inputs/SelectInput";
 import FormButton from "../../FormButton";
 import FormIntro from "./FormIntro";
 
-function BookingForm(props) {
-  const availableTimes = [
-    "15:00",
-    "16:00",
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00",
-  ];
+function BookingForm() {
+  function TimeOptions() {
+    const { values } = useFormikContext();
+    const selectedDate = values.Date;
 
-  const timeOptions = availableTimes.map((time) => ({
-    value: time,
-    label: time,
-  }));
+    const currDate = new Date();
+    const currHours = currDate.getHours();
+    const day = currDate.getDate();
+    const month = currDate.getMonth() + 1;
+    const formattedMonth = "0" + month;
+    const year = currDate.getFullYear();
+    const currFormattedDate = year + "-" + formattedMonth + "-" + day;
+
+    let availableHours = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
+
+    if (selectedDate === currFormattedDate) {
+      availableHours = availableHours.filter((hours) => hours > currHours);
+    }
+
+    const availableHoursFormatted = availableHours.map(
+      (hours) => `${hours}:00`
+    );
+
+    const timeOptions = availableHoursFormatted.map((time) => ({
+      value: time,
+      label: time,
+    }));
+
+    return (
+      <SelectInput label="Select Time" name="bookingTime">
+        <option value="">Select preferred time</option>
+        {timeOptions.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </SelectInput>
+    );
+  }
   return (
     <Fragment>
       <FormIntro
         title={"Reserve a Table"}
-        message={
-          "You can now find a table for any occassion! Kindly note that same day reservations are not available."
-        }
+        message={"You can now find a table for any occassion!"}
       />
       <Formik
         initialValues={{
           Date: "",
-          availableTimes: "",
+          bookingTime: "",
           noOfGuests: "",
           occassion: "",
           specialRequest: "",
@@ -41,7 +62,7 @@ function BookingForm(props) {
         validationSchema={Yup.object({
           Date: Yup.date()
             .min(
-              new Date().toLocaleString("en", {
+              new Date(Date.now() - 24 * 60 * 60 * 1000).toLocaleString("en", {
                 timeZone: "EAT",
                 hour12: false,
               })
@@ -70,14 +91,7 @@ function BookingForm(props) {
       >
         <Form className="form">
           <TextInput label="Date" name="Date" type="date" />
-          <SelectInput label="Time" name="bookingTime">
-            <option value="">Select preferred time</option>
-            {timeOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </SelectInput>
+          <TimeOptions />
           <TextInput
             label="Number of Guests"
             name="noOfGuests"
