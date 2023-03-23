@@ -11,7 +11,7 @@ function SignupForm() {
     <Fragment>
       <FormIntro
         title={"Little Lemon Sign Up"}
-        message={"The Beginning of fast and reliable online services"}
+        message={"Gateway to fast and reliable online services"}
       />
       <Formik
         initialValues={{
@@ -44,8 +44,20 @@ function SignupForm() {
         })}
       >
         <Form className="form">
-          <TextInput name="firstName" type="text" placeholder="First Name" />
-          <TextInput name="lastName" type="text" placeholder="Last Name" />
+          <div className="form-input">
+            <TextInput
+              className="name"
+              name="firstName"
+              type="text"
+              placeholder="First Name"
+            />
+            <TextInput
+              className="name"
+              name="lastName"
+              type="text"
+              placeholder="Last Name"
+            />
+          </div>
           <TextInput name="email" type="email" placeholder="Email" />
           <TextInput name="password" type="password" placeholder="Password" />
           <TextInput
@@ -54,7 +66,10 @@ function SignupForm() {
             placeholder="Confirm Password"
           />
           <FormButton>Sign Up</FormButton>
-          <p>Already have a Little Lemon account? <Link to="/login">Log in here</Link></p>
+          <p>
+            Already have a Little Lemon account?{" "}
+            <Link to="/login">Log in here</Link>
+          </p>
         </Form>
       </Formik>
     </Fragment>
