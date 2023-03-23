@@ -38,6 +38,19 @@ main section {
   width: 30rem;
 }
 
+.form-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-input .name {
+  width: 14.25rem;
+}
+
+.form-input .name.error {
+  border: 1px solid #ee9972;
+}
+
 .form p {
   padding: 1.5rem 0;
   color: #fff;
