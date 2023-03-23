@@ -14,11 +14,12 @@
 
 .select-input label {
   color: #495e57;
-  font-size: 1.15rem;
+  font-size: 1.0025rem;
 }
 
 .select-input select {
   border: 0.5px solid #495e57;
+  margin-left: 1.25rem;
   border-radius: 0.25rem;
   padding: 0.2rem;
   color: #495e57;
