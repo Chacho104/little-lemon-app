@@ -35,6 +35,7 @@
 
 .text-input input {
   border: 0.5px solid #495e57;
+  margin-left: 3.7rem;
   border-radius: 0.25rem;
   padding: 0.2rem;
   color: #495e57;
