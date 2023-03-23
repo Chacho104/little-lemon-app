@@ -27,7 +27,7 @@ function LoginForm() {
     <Fragment>
       <FormIntro
         title={"Little Lemon Log In"}
-        message={"Gateway to fast and reliable online services"}
+        message={"Log in to Enjoy fast and reliable online services"}
       />
       <Formik
         initialValues={{
