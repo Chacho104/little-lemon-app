@@ -36,7 +36,7 @@ function BookingForm() {
 
     return (
       <SelectInput label="Select Time" name="bookingTime">
-        <option value="">Select preferred time</option>
+        <option value="">Available Time Slots</option>
         {timeOptions.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}
@@ -57,7 +57,9 @@ function BookingForm() {
           bookingTime: "",
           noOfGuests: "",
           occassion: "",
-          specialRequest: "",
+          firstName: "",
+          lastName: "",
+          email: "",
         }}
         validationSchema={Yup.object({
           Date: Yup.date()
@@ -72,8 +74,8 @@ function BookingForm() {
             "Please choose time for the booking"
           ),
           noOfGuests: Yup.number()
-            .min(1, "Number of guests must be at least 1")
-            .max(10, "Number of guests must be at least 10")
+            .min(1, "Enter at least 1 guest")
+            .max(10, "Enter at most 10 guests")
             .required("Number of guests is required"),
           occassion: Yup.string()
             .oneOf(
@@ -81,6 +83,15 @@ function BookingForm() {
               "Invalid Occassion"
             )
             .required("Please select an occassion"),
+          firstName: Yup.string()
+            .max(15, "Must be 15 characters or less")
+            .required("Please enter your first name"),
+          lastName: Yup.string()
+            .max(20, "Must be 20 characters or less")
+            .required("Please enter your last name"),
+          email: Yup.string()
+            .email("Invalid email address")
+            .required("Please enter your email address"),
         })}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
@@ -92,19 +103,36 @@ function BookingForm() {
         <Form className="form">
           <TextInput label="Date" name="Date" type="date" />
           <TimeOptions />
-          <TextInput
-            label="Number of Guests"
-            name="noOfGuests"
-            type="number"
-            placeholder="1"
-          />
-          <SelectInput label="Occassion" name="occassion">
-            <option value="">Select an occassion</option>
-            <option value="birthday">Birthday</option>
-            <option value="engagement">Engagement</option>
-            <option value="anniversary">Anniversary</option>
-            <option value="other">Other</option>
-          </SelectInput>
+          <div className="form-input">
+            <TextInput
+              label="No. of Guests"
+              name="noOfGuests"
+              type="number"
+              placeholder="1"
+            />
+            <SelectInput label="Occassion" name="occassion">
+              <option value="">Select</option>
+              <option value="birthday">Birthday</option>
+              <option value="engagement">Engagement</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="other">Other</option>
+            </SelectInput>
+          </div>
+          <div className="form-input">
+            <TextInput
+              className="name"
+              name="firstName"
+              type="text"
+              placeholder="First Name"
+            />
+            <TextInput
+              className="name"
+              name="lastName"
+              type="text"
+              placeholder="Last Name"
+            />
+          </div>
+          <TextInput name="email" type="email" placeholder="Email" />
           <FormButton>Make your Reservation</FormButton>
         </Form>
       </Formik>
