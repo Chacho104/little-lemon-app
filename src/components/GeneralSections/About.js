@@ -17,7 +17,7 @@ function About() {
       <h1>About</h1>
       <div className={classes.description}>
         <p>
-          Little Lemon (co-founded by the formidable duo, Mario Stefano and
+          Little Lemon (co-founded by Mario Stefano and
           Adrian Demphris) is a vibrant Chicago restaturant focused on serving
           traditional recipes in a modern setting. Little Lemon celebrates the
           best of traditional Mediterranean dishes with irresistible hospitality
