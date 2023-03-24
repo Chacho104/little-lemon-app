@@ -47,10 +47,6 @@ main section {
   width: 14.25rem;
 }
 
-.form-input .name.error {
-  border: 1px solid #ee9972;
-}
-
 .form p {
   padding: 1.5rem 0;
   color: #fff;
@@ -64,4 +60,31 @@ main section {
 
 .form p a:hover {
   color: #f4ce14;
+}
+
+.formbtn {
+  cursor: pointer;
+  color: #333333;
+  font-family: "Karla", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #f4ce14;
+  border: 1px solid #f4ce14;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.formbtn:hover,
+.formbtn.active {
+  background-color: #ccac0f;
+  border-color: #ccac0f;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.formbtn:disabled {
+  background-color: #b1960d;
+  border: none;
+  cursor: not-allowed;
 }
