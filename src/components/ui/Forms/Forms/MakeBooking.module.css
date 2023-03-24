@@ -1,0 +1,39 @@
+.booking {
+  background-color: #fff;
+  width: 30rem;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.booking h2 {
+  color: #333;
+  padding-bottom: 1rem;
+}
+
+.booking p {
+  color: #495e57;
+  line-height: 1.75;
+  font-size: 1.15rem;
+}
+
+.booking .refresh,
+.booking a {
+  cursor: pointer;
+  color: #495e57;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.booking .refresh:hover,
+.booking a:hover {
+  color: #f4ce14;
+}
+
+.booking .action {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
