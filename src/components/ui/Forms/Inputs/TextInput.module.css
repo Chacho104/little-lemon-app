@@ -14,6 +14,10 @@
   outline: none;
 }
 
+.input-var input:valid {
+  background-color: #fff;
+}
+
 .input-var input.error {
   border: 1px solid #ee9972;
 }
