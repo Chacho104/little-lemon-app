@@ -2,7 +2,6 @@ import { Form, Formik } from "formik";
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import * as Yup from "yup";
-import FormButton from "../../FormButton";
 import TextInput from "../Inputs/TextInput";
 import FormIntro from "./FormIntro";
 
@@ -50,8 +49,13 @@ function LoginForm() {
             placeholder="Username or email"
           />
           <TextInput name="password" type="password" placeholder="Password" />
-          <FormButton>Log In</FormButton>
-          <p>Don't have a Little Lemon account? <Link to="/signup">Sign up here</Link></p>
+          <button className="formbtn" type="submit">
+            Log In
+          </button>
+          <p>
+            Don't have a Little Lemon account?{" "}
+            <Link to="/signup">Sign up here</Link>
+          </p>
         </Form>
       </Formik>
     </Fragment>
