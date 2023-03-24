@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import Input from "../UI/Input";
 import classes from "./MealItemForm.module.css";
-import FormButton from "../UI/FormButton";
 
 function MealItemForm(props) {
   const [amountIsValid, setAmountIsValid] = useState(true);
@@ -47,7 +46,7 @@ function MealItemForm(props) {
         />
       </div>
       <div className={classes.action}>
-        <FormButton>Add to Basket</FormButton>
+      <button className="formbtn">Add to Basket</button>
         {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
       </div>
     </form>
