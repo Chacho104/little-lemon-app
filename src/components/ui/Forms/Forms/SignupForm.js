@@ -3,7 +3,6 @@ import * as Yup from "yup";
 import { Fragment } from "react";
 import FormIntro from "./FormIntro";
 import TextInput from "../Inputs/TextInput";
-import FormButton from "../../FormButton";
 import { Link } from "react-router-dom";
 
 function SignupForm() {
@@ -65,7 +64,9 @@ function SignupForm() {
             type="password"
             placeholder="Confirm Password"
           />
-          <FormButton>Sign Up</FormButton>
+          <button className="formbtn" type="submit">
+            Sign Up
+          </button>
           <p>
             Already have a Little Lemon account?{" "}
             <Link to="/login">Log in here</Link>
