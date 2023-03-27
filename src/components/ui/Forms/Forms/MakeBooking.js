@@ -136,11 +136,10 @@ function MakeBooking() {
       <div className={classes.booking}>
         <h2>Congratulations!</h2>
         <p>
-          You have successfully made your table reservation. If you'd like to
-          manage your reservation(s) (i.e cancel or edit),{" "}
-          <Link to="/login">log in</Link> to your account or, if you don't have
-          an account, <Link to="/signup">sign up</Link> with the name and email
-          you've just used to make your reservation.
+          You have successfully reserved a table. To manage your reservation(s)
+          (i.e cancel or edit), <Link to="/login">log in</Link> to your account
+          or, if you don't have an account, <Link to="/signup">sign up</Link>{" "}
+          with the name and email you've just used to make your reservation.
         </p>
         <p>See you soon!</p>
         <div className={classes.action}>
