@@ -20,7 +20,7 @@ export default RootLayout;
 
 export async function loader() {
   const response = await fetch(
-    "https://little-lemon-project-default-rtdb.firebaseio.com/meals.json"
+    "https://little-lemon-complete-default-rtdb.firebaseio.com/meals.json"
   );
 
   if (!response.ok) {
