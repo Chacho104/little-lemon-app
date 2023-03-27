@@ -61,7 +61,7 @@ function MealsNavigation(props) {
               }
               preventScrollReset={true}
             >
-              Beverages
+              Hot Beverages
             </NavLink>
           </li>
           <li>
