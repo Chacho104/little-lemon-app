@@ -63,7 +63,7 @@ function Basket() {
       </div>
       <div className={classes.actions}>
         <div className={classes.close}>
-          <Button link="/menu">Close</Button>
+          {hasItems && <Button link="/menu">Close</Button>}
         </div>
         <div className={classes.proceed}>
           {hasItems && <Button link="/checkout">Checkout</Button>}
