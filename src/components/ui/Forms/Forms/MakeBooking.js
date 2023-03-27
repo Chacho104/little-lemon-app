@@ -43,7 +43,7 @@ function MakeBooking() {
             )
             .required("Please enter a valid date"),
           bookingTime: Yup.string().required(
-            "Please choose time for the booking"
+            "Please enter time for the booking"
           ),
           noOfGuests: Yup.number()
             .min(1, "Enter at least 1 guest")
