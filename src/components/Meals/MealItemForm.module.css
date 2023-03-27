@@ -7,3 +7,11 @@
   display: flex;
   justify-content: space-between;
 }
+
+.action {
+  padding: 2rem 0;
+}
+
+.action button {
+  border-radius: 6rem;
+}
