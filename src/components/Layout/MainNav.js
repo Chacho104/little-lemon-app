@@ -1,7 +1,7 @@
 import { NavLink, Link } from "react-router-dom";
 import classes from "./MainNav.module.css";
 import Logo from "../../assets/Logo.svg";
-import NavBasketButton from "./NavBasketButton";
+import BasketIcon from "../Cart/BasketIcon";
 
 function MainNav() {
   return (
@@ -74,10 +74,8 @@ function MainNav() {
             </NavLink>
           </li>
         </ul>
-        <span className={classes.basket}>
-          <NavLink to="basket">
-            <NavBasketButton />
-          </NavLink>
+        <span>
+          <BasketIcon />
         </span>
       </nav>
     </header>
