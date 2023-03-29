@@ -20,7 +20,7 @@
 .description p a {
   color: #495e57;
   text-decoration: underline;
-  text-underline-offset: 0.25rem;
+  text-underline-offset: 0.3rem;
 }
 
 .description p a:hover {
@@ -79,7 +79,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   padding: 2rem 0;
 }
 
@@ -110,4 +109,47 @@
 
 .member:hover {
   border: 1px solid #333;
+}
+
+@media screen and (max-width: 1015px) {
+  .description p {
+    padding: 0 3.5rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .branch {
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  #reverse {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .members {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .description p {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .branch {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .branch img {
+    width: 100%;
+    height: auto;
+  }
 }
