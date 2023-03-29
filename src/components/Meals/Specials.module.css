@@ -12,3 +12,14 @@
 .highlights {
   margin-top: 4rem;
 }
+
+@media screen and (max-width: 960px) {
+  .title {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title .action {
+    display: none;
+  }
+}
