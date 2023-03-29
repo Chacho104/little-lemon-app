@@ -1,7 +1,7 @@
-import Card from "../UI/Card";
 import { FaQuoteLeft } from "react-icons/fa";
 import classes from "./TestimonialsListItem.module.css";
 import Rating from "./Rating";
+import Card from "../UI/Card";
 
 function TestimonialsListItem(props) {
   return (
