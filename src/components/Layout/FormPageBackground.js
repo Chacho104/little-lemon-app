@@ -4,7 +4,7 @@ function FormPageBackground(props) {
   return (
     <div className={classes.hero}>
       <div className={classes.overlay}></div>
-      <div className={classes.content}>{props.children}</div>
+      <section className={classes.content}>{props.children}</section>
     </div>
   );
 }
