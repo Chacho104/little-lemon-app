@@ -14,23 +14,24 @@
   margin-top: 3.5rem;
 }
 
-.hero h1 {
+.content h1 {
   color: #f4ce14;
   font-family: "Markazi Text", serif;
   font-size: 4rem;
 }
 
-.hero h2 {
+.content h2 {
   color: #ffffff;
   font-family: "Markazi Text", serif;
   font-size: 2.5rem;
 }
 
-.hero p {
+.content p {
   width: 80%;
   color: #ffffff;
   font-family: "Karla", sans-serif;
   font-size: 1.125rem;
+  line-height: 1.5;
   margin: 0.5rem 0 2rem 0;
 }
 
@@ -43,4 +44,26 @@
   width: 100%;
   height: auto;
   border-radius: 1.5rem;
+}
+
+@media screen and (max-width: 535px) {
+  .image {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content p {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .hero-section {
+    height: 33rem;
+  }
 }
