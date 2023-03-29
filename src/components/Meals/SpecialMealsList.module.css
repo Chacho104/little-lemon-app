@@ -1,4 +1,11 @@
 .specials {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 960px) {
+  .specials {
+    justify-content: space-around;
+  }
 }
