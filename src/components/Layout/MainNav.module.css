@@ -9,16 +9,18 @@
 }
 
 .nav-items {
-  width: 90%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  margin-right: 4rem;
+.dropMenu {
+  display: none;
+  font-size: 2rem;
+  color: #495e57;
 }
 
 .navList {
@@ -42,3 +44,44 @@
   text-decoration: underline;
   text-underline-offset: 0.4rem;
 }
+
+@media screen and (max-width: 1420px) {
+  .nav-items {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .nav-items {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .nav-items {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .nav-items {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .nav-items {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .navList {
+    display: none;
+  }
+
+  .dropMenu {
+    display: block;
+  }
+}
+
