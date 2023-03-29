@@ -14,7 +14,7 @@
 
 .testimonial-content {
   margin: 1rem 0;
-  color: #495e57;
+  color: #fff;
   height: 7.75rem;
 }
 
@@ -25,14 +25,18 @@
   margin-bottom: 0.5rem;
 }
 
+.testimonial-user h4 {
+  color: #ee9972;
+}
+
 .testimonial-user p {
   color: #495e57;
   padding: 0.5rem 0;
 }
 
 .testimonial-user img {
-  width: 6.25rem;
-  height: 6.25rem;
-  border: 2px solid #495e57;
-  border-radius: 6.25rem;
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid #ee9972;
+  border-radius: 6rem;
 }
