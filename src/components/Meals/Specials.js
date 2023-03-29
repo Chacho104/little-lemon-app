@@ -11,7 +11,9 @@ function Specials() {
     <section>
       <div className={classes.title}>
         <h1>This Week's Specials!</h1>
-        <Button link="/menu">Online Menu</Button>
+        <div className={classes.action}>
+          <Button link="/menu">Online Menu</Button>
+        </div>
       </div>
       <div className={classes.highlights}>
         <SpecialMealsList meals={specialMeals} />
