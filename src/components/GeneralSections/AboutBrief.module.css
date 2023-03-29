@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   gap: 3rem;
+  padding: 4rem 0 2rem;
 }
 
 .content h1 {
@@ -21,10 +22,13 @@
   padding: 0.75rem 0;
 }
 
+.content a {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
 .content a:hover {
   color: #f4ce14;
-  text-decoration: underline;
-  text-underline-offset: 0.25rem;
 }
 
 .owners-img {
@@ -40,4 +44,24 @@
   width: 18rem;
   height: 22rem;
   border-radius: 1.5rem;
+}
+
+@media screen and (max-width: 890px) {
+  .about {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .owners-img {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .owners-img .firstImage {
+    margin: 0;
+    padding-bottom: 2rem;
+  }
 }
