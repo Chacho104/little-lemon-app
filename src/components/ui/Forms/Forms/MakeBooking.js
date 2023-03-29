@@ -29,8 +29,7 @@ function MakeBooking() {
           bookingTime: "",
           noOfGuests: "",
           occassion: "",
-          firstName: "",
-          lastName: "",
+          name: "",
           email: "",
         }}
         validationSchema={Yup.object({
@@ -55,12 +54,9 @@ function MakeBooking() {
               "Invalid Occassion"
             )
             .required("Please select an occassion"),
-          firstName: Yup.string()
-            .max(15, "Must be 15 characters or less")
-            .required("Please enter your first name"),
-          lastName: Yup.string()
+          name: Yup.string()
             .max(20, "Must be 20 characters or less")
-            .required("Please enter your last name"),
+            .required("Please enter your name"),
           email: Yup.string()
             .email("Invalid email address")
             .required("Please enter your email address"),
@@ -89,35 +85,24 @@ function MakeBooking() {
         <Form className="form">
           <TextInput label="Date" name="Date" type="date" />
           <TimeOptions />
-          <div className="form-input">
-            <TextInput
-              label="No. of Guests"
-              name="noOfGuests"
-              type="number"
-              placeholder="0"
-            />
-            <SelectInput label="Occassion" name="occassion">
-              <option value="">Select</option>
-              <option value="birthday">Birthday</option>
-              <option value="engagement">Engagement</option>
-              <option value="anniversary">Anniversary</option>
-              <option value="other">Other</option>
-            </SelectInput>
-          </div>
-          <div className="form-input">
-            <TextInput
-              className="name"
-              name="firstName"
-              type="text"
-              placeholder="First Name"
-            />
-            <TextInput
-              className="name"
-              name="lastName"
-              type="text"
-              placeholder="Last Name"
-            />
-          </div>
+          <TextInput
+            label="No. of Guests"
+            name="noOfGuests"
+            type="number"
+            placeholder="0"
+          />
+          <SelectInput label="Occassion" name="occassion">
+            <option value="">Select</option>
+            <option value="birthday">Birthday</option>
+            <option value="engagement">Engagement</option>
+            <option value="anniversary">Anniversary</option>
+            <option value="other">Other</option>
+          </SelectInput>
+          <TextInput
+            name="name"
+            type="text"
+            placeholder="First and Last Name"
+          />
           <TextInput name="email" type="email" placeholder="Email" />
           <button className="formbtn" type="submit">
             Make your Reservation
@@ -136,10 +121,10 @@ function MakeBooking() {
       <div className={classes.booking}>
         <h2>Congratulations!</h2>
         <p>
-          You have successfully reserved a table. To manage your reservation(s)
+          You have successfully reserved a table. To manage your reservations
           (i.e cancel or edit), <Link to="/login">log in</Link> to your account
-          or, if you don't have an account, <Link to="/signup">sign up</Link>{" "}
-          with the name and email you've just used to make your reservation.
+          or <Link to="/signup">sign up</Link> with the name and email you've
+          just used to make your reservation.
         </p>
         <p>See you soon!</p>
         <div className={classes.action}>
