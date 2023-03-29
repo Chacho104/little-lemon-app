@@ -2,8 +2,17 @@
   font-size: 2rem;
   color: #495e57;
   text-align: center;
+  padding: 0 0.125rem 1.5rem;
+}
+
+.title p {
+  color: #495e57;
+  text-align: center;
+  line-height: 1.75;
+  font-size: 1.15rem;
+  padding: 0 1rem;
 }
 
 .content {
-    padding-top: 4rem;
+  padding-top: 4rem;
 }
