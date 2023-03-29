@@ -12,13 +12,17 @@
   padding: 1.25rem;
 }
 
+.header h3 {
+  color: #f4ce14;
+}
+
 .header p {
   color: #ee9972;
 }
 
 .description {
   padding: 0 1.25rem 1rem;
-  color: #495e57;
+  color: #fff;
 }
 
 .action {
@@ -26,15 +30,21 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.action a {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  color: #f4ce14;
 }
 
 .action a:hover {
-  color: #f4ce14;
-  text-decoration: underline;
-  text-underline-offset: 0.25rem;
+  color: #ccac0f;
 }
 
 .action svg {
   font-weight: 600;
   font-size: 1.25rem;
+  color: #f4ce14;
 }
