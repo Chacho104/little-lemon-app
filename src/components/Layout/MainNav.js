@@ -2,11 +2,15 @@ import { NavLink, Link } from "react-router-dom";
 import classes from "./MainNav.module.css";
 import Logo from "../../assets/Logo.svg";
 import BasketIcon from "../Cart/BasketIcon";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function MainNav() {
   return (
     <header className={classes.header}>
       <nav className={classes["nav-items"]}>
+        <span className={classes.dropMenu}>
+          <GiHamburgerMenu />
+        </span>
         <span className={classes.logo}>
           <Link to="/">
             <img src={Logo} alt="Little Lemon Logo" />
@@ -74,7 +78,7 @@ function MainNav() {
             </NavLink>
           </li>
         </ul>
-        <span>
+        <span className={classes.basket}>
           <BasketIcon />
         </span>
       </nav>
