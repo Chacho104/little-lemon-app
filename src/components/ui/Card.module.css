@@ -1,12 +1,20 @@
 .card {
-  background-color: #edefee;
+  background-color: #495e57;
   border-radius: 1.25rem;
   width: 19rem;
   height: auto;
-  min-height: 21rem;
-  margin-bottom: 2rem;
+  min-height: 22rem;
+  margin-bottom: 3rem;
 }
 
-.card:hover {
-  box-shadow: none;
+@media screen and (max-width: 400px) {
+  .card {
+    width: 17rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .card {
+    width: 15rem;
+  }
 }
