@@ -1,3 +1,9 @@
+.booking-form {
+  width: auto;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
 .booking {
   background-color: #fff;
   width: 30rem;
