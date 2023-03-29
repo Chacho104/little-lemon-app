@@ -1,5 +1,5 @@
 footer {
-  height: 22rem;
+  height: auto;
   background-color: #000;
 }
 
@@ -10,7 +10,6 @@ footer {
 
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid #5a5b5b;
 }
 
 .logo {
@@ -37,7 +36,7 @@ footer {
 }
 
 .item {
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .icon {
@@ -46,13 +45,53 @@ footer {
 }
 
 .copyright {
-  width: 80%;
-  height: 12%;
-  margin: 0 auto;
-  padding: 0.8rem 0;
-
+  border-top: 1px solid #888989;
+  background-color: #000;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
   color: #edefee;
   font-family: "Markazi Text", serif;
+}
+
+@media screen and (max-width: 1140px) {
+  .bottNav {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .bottNav {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .bottNav {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .bottNav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .bottNav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .item h1,
+  .item li {
+    padding-left: 1.25rem;
+  }
 }
