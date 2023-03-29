@@ -43,20 +43,18 @@ function SignupForm() {
         })}
       >
         <Form className="form">
-          <div className="form-input">
-            <TextInput
-              className="name"
-              name="firstName"
-              type="text"
-              placeholder="First Name"
-            />
-            <TextInput
-              className="name"
-              name="lastName"
-              type="text"
-              placeholder="Last Name"
-            />
-          </div>
+          <TextInput
+            className="name"
+            name="firstName"
+            type="text"
+            placeholder="First Name"
+          />
+          <TextInput
+            className="name"
+            name="lastName"
+            type="text"
+            placeholder="Last Name"
+          />
           <TextInput name="email" type="email" placeholder="Email" />
           <TextInput name="password" type="password" placeholder="Password" />
           <TextInput
