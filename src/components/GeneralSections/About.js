@@ -32,7 +32,7 @@ function About() {
         </p>
       </div>
       <h1>Locations & Opening Hours</h1>
-      <div className={classes.branch}>
+      <div className={classes.branch} id={classes.reverse}>
         <div>
           <img
             src={LocationImage1}
