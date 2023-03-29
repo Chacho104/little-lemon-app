@@ -24,6 +24,7 @@ main {
 
 main section {
   width: 70%;
+  height: auto;
   margin: 0 auto 5rem;
 }
 
@@ -35,16 +36,15 @@ main section {
 }
 
 .form {
-  width: 30rem;
+  width: auto;
+  max-width: 30rem;
+  margin: 0 auto;
 }
 
 .form-input {
   display: flex;
   justify-content: space-between;
-}
-
-.form-input .name {
-  width: 14.25rem;
+  gap: 1rem;
 }
 
 .form p {
@@ -71,7 +71,7 @@ main section {
   background-color: #f4ce14;
   border: 1px solid #f4ce14;
   border-radius: 0.5rem;
-  padding: 0.6rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   width: 100%;
   text-align: center;
 }
@@ -87,4 +87,47 @@ main section {
   background-color: #b1960d;
   border: none;
   cursor: not-allowed;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1420px) {
+  main section {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  main section {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  main section {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  main section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  main section {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-input {
+    flex-direction: column;
+  }
 }
