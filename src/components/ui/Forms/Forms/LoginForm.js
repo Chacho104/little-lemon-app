@@ -25,7 +25,7 @@ function LoginForm() {
   return (
     <Fragment>
       <FormIntro
-        title={"Little Lemon Log In"}
+        title={"Little Lemon Login"}
         message={"Log in to Enjoy fast and reliable online services"}
       />
       <Formik
