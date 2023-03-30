@@ -24,7 +24,7 @@ function MealItemDetails({ meal }) {
         <div className={classes.details}>
           <h2>{meal.title}</h2>
           <p>{meal.description}</p>
-          <SecondaryBtn link={".."} action={"Change Meal"} />
+          <SecondaryBtn link={".."} action={"Change"} />
         </div>
         <div className={classes.customize}>
           <MealItemForm
