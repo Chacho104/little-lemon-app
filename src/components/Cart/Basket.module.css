@@ -1,5 +1,6 @@
 .basket {
-  min-height: 36vh;
+  height: auto;
+  min-height: 48vh;
   border-radius: 2rem;
   border: 1px solid #edefee;
   margin-top: 3rem;
@@ -8,6 +9,8 @@
 
 .basket h1 {
   margin-top: 1rem;
+  color: #495e57;
+  font-size: 2rem;
 }
 
 .total {
@@ -22,9 +25,23 @@
 .actions {
   display: flex;
   justify-content: flex-end;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
 }
 
 .close {
   margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  .actions {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .actions {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 2rem;
+  }
 }
