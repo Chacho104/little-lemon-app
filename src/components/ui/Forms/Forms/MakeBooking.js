@@ -112,12 +112,12 @@ function MakeBooking() {
     </Fragment>
   );
   const isSubmittingDetails = (
-    <div className={classes.booking}>
+    <section className={classes.booking}>
       <p>Processing your table reservation request...</p>
-    </div>
+    </section>
   );
   const didSubmitDetails = (
-    <Fragment>
+    <section>
       <div className={classes.booking}>
         <h2>Congratulations!</h2>
         <p>
@@ -131,15 +131,15 @@ function MakeBooking() {
           <Button onClick={refreshPage}>Close</Button>
         </div>
       </div>
-    </Fragment>
+    </section>
   );
   const errorMessage = (
-    <div className={classes.booking}>
+    <section className={classes.booking}>
       <p>Sorry, we could not process your reservation request.</p>
       <p className={classes.refresh} onClick={refreshPage}>
         Please try again.
       </p>
-    </div>
+    </section>
   );
   return (
     <Fragment>
