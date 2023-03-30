@@ -13,13 +13,17 @@ function Basket() {
 
   const hasItems = cartCtx.items.length > 0;
 
-  const cartItemRemoveHandler = (id) => {
+  function cartItemRemoveHandler(id) {
     cartCtx.removeItem(id);
-  };
+  }
 
-  const cartItemAddHandler = (item) => {
+  function cartItemAddHandler(item) {
     cartCtx.addItem({ ...item, amount: 1 });
-  };
+  }
+
+  function clearCartItemsHandler() {
+    cartCtx.clearCart();
+  }
 
   const basketItems = (
     <ul>
@@ -39,12 +43,7 @@ function Basket() {
   return (
     <section className={classes.basket}>
       <div>
-        {hasItems && (
-          <SecondaryBtn
-            link={"/menu"}
-            action={"Add More Meals"}
-          />
-        )}
+        {hasItems && <SecondaryBtn link={"/menu"} action={"Add More"} />}
       </div>
       {hasItems && (
         <div>
@@ -63,10 +62,10 @@ function Basket() {
       </div>
       <div className={classes.actions}>
         <div className={classes.close}>
-          {hasItems && <Button link="/menu">Close</Button>}
+          {hasItems && <Button onClick={clearCartItemsHandler}>Cancel</Button>}
         </div>
         <div className={classes.proceed}>
-          {hasItems && <Button link="/checkout">Checkout</Button>}
+          {hasItems && <Button link="/checkout">Order Now</Button>}
         </div>
       </div>
     </section>
