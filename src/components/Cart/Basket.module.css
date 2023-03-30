@@ -25,6 +25,7 @@
 .actions {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin: 2.5rem 0;
 }
 
