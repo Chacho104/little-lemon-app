@@ -1,5 +1,5 @@
 .meal-item {
-  width: 55%;
+  max-width: 35rem;
   height: auto;
   margin: 3rem auto;
   border: 1px solid #edefee;
@@ -8,7 +8,8 @@
 
 .meal-item img {
   width: 100%;
-  height: 18.75rem;
+  height: auto;
+  max-height: 18.75rem;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
 }
