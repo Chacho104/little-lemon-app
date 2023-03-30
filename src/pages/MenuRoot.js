@@ -13,9 +13,8 @@ function MenuRootLayout() {
         message={
           <p>
             Check out all our available meals and drinks. If you love to enjoy
-            your meals in the comfort of your home, pick your favorite(s) from
-            the categories below, add to basket and order online, and we will
-            deliver swiftly!
+            your meals at home, pick your favorite(s) from the categories below,
+            add to basket and order online, and we will deliver swiftly!
           </p>
         }
       />
