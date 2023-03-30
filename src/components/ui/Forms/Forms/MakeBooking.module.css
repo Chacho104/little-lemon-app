@@ -6,7 +6,9 @@
 
 .booking {
   background-color: #fff;
-  width: 30rem;
+  width: auto;
+  max-width: 30rem;
+  margin: 0 auto;
   padding: 2rem 1.5rem;
   border-radius: 0.5rem;
   display: flex;
