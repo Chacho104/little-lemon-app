@@ -6,22 +6,22 @@ import TextInput from "../Inputs/TextInput";
 import FormIntro from "./FormIntro";
 
 function LoginForm() {
-  const usernameOrEmailSchema = Yup.string().test(
-    "usernameOrEmail",
-    "Invalid username or email",
-    function (value) {
-      // Defining regular expressions for username and email formats
-      const usernameRegex = /^[a-zA-Z0-9_-]{3,16}$/;
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  // const usernameOrEmailSchema = Yup.string().test(
+  //   "usernameOrEmail",
+  //   "Invalid username or email",
+  //   function (value) {
+  //     // Defining regular expressions for username and email formats
+  //     const usernameRegex = /^[a-zA-Z0-9_-]{3,16}$/;
+  //     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-      // Checking if the input matches either format
-      if (usernameRegex.test(value) || emailRegex.test(value)) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-  );
+  //     // Checking if the input matches either format
+  //     if (usernameRegex.test(value) || emailRegex.test(value)) {
+  //       return true;
+  //     } else {
+  //       return false;
+  //     }
+  //   }
+  // );
   return (
     <Fragment>
       <FormIntro
@@ -30,24 +30,20 @@ function LoginForm() {
       />
       <Formik
         initialValues={{
-          usernameOrEmail: "",
+          email: "",
           password: "",
         }}
         validationSchema={Yup.object({
-          usernameOrEmail: usernameOrEmailSchema.required(
-            "Please enter your username or email"
-          ),
+          email: Yup.string()
+            .email("Invalid email address")
+            .required("Please enter your email address"),
           password: Yup.string()
             .required("Please enter your password")
             .min(8, "Password must be at least 8 characters long"),
         })}
       >
         <Form className="form">
-          <TextInput
-            name="usernameOrEmail"
-            type="alphanumeric"
-            placeholder="Username or email"
-          />
+          <TextInput name="email" type="alphanumeric" placeholder="Email" />
           <TextInput name="password" type="password" placeholder="Password" />
           <button className="formbtn" type="submit">
             Log In
