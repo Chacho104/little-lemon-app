@@ -1,4 +1,4 @@
-import { useRouteLoaderData } from "react-router-dom";
+import { Link, useRouteLoaderData } from "react-router-dom";
 import SpecialMealsList from "./SpecailMealsList";
 import classes from "./Specials.module.css";
 import Button from "../UI/Button";
@@ -11,6 +11,10 @@ function Specials() {
     <section>
       <div className={classes.title}>
         <h1>This Week's Specials!</h1>
+        <p>
+          Order our specials for the week or check out our full{" "}
+          <Link to="/menu">online menu</Link>
+        </p>
         <div className={classes.action}>
           <Button link="/menu">Online Menu</Button>
         </div>
