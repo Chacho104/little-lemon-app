@@ -1,4 +1,5 @@
-.header {
+.header,
+.alt-header {
   width: 100%;
   height: 5rem;
   position: sticky;
@@ -8,19 +9,18 @@
   z-index: 3333;
 }
 
-.nav-items {
+.alt-header {
+  display: none;
+}
+
+.nav-items,
+.alt-navitems {
   width: 70%;
   height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.dropMenu {
-  display: none;
-  font-size: 2rem;
-  color: #495e57;
 }
 
 .navList {
@@ -76,12 +76,25 @@
 }
 
 @media screen and (max-width: 910px) {
-  .navList {
+  .header {
     display: none;
   }
 
-  .dropMenu {
-    display: block;
+  .alt-header {
+    display: flex;
   }
-}
 
+  .alt-navitems {
+    width: 95%;
+  }
+
+  .toggleLinks {
+    color: #495e57;
+    font-size: 2rem;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
