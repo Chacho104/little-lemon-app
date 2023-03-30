@@ -46,6 +46,12 @@
   border-radius: 1.5rem;
 }
 
+@media screen and (max-width: 910px) {
+  .hero-section {
+    margin-bottom: 5rem;
+  }
+}
+
 @media screen and (max-width: 535px) {
   .image {
     display: none;
