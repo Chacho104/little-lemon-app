@@ -7,6 +7,27 @@
 .title h1 {
   font-size: 2rem;
   color: #495e57;
+  text-align: center;
+  padding: 0 0.125rem 1.5rem;
+}
+
+.title p {
+  color: #495e57;
+  text-align: center;
+  line-height: 1.75;
+  font-size: 1.15rem;
+  padding: 0 1rem;
+  display: none;
+}
+
+.title p a {
+  color: #495e57;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.title p a:hover {
+  color: #f4ce14;
 }
 
 .highlights {
@@ -15,8 +36,11 @@
 
 @media screen and (max-width: 960px) {
   .title {
-    justify-content: center;
-    text-align: center;
+    display: block;
+  }
+
+  .title p {
+    display: block;
   }
 
   .title .action {
