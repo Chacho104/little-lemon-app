@@ -65,7 +65,7 @@ function Basket() {
           {hasItems && <Button onClick={clearCartItemsHandler}>Cancel</Button>}
         </div>
         <div className={classes.proceed}>
-          {hasItems && <Button link="/checkout">Order Now</Button>}
+          {hasItems && <Button link="/checkout">Order</Button>}
         </div>
       </div>
     </section>
