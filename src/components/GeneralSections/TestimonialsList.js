@@ -31,7 +31,6 @@ function TestimonialsList(props) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: true,
           infinite: true,
           dots: true,
         },
@@ -41,7 +40,6 @@ function TestimonialsList(props) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: false,
           infinite: true,
           dots: true,
         },
