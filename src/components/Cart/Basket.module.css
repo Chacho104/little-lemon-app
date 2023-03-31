@@ -45,6 +45,9 @@
 }
 
 @media screen and (max-width: 550px) {
+  .basket {
+    margin-top: 1.5rem;
+  }
   .actions {
     justify-content: space-between;
   }
