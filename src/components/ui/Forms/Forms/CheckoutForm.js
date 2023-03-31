@@ -111,7 +111,7 @@ function CheckoutForm(props) {
   const didSubmitDetails = (
     <DidSubmit
       message="You have successfully placed your order. We shall swiftly process and
-      deliver it to your doorstep. Please note that you will pay for the order upon delivery, and that there is no added cost for delivery!"
+      deliver it to your doorstep."
       regards="Thank you!"
       onClick={props.orderSuccessful}
     />
