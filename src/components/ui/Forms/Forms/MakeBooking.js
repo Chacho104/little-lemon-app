@@ -85,7 +85,7 @@ function MakeBooking() {
           <TextInput label="Date" name="Date" type="date" />
           <TimeOptions />
           <TextInput
-            label="No. of Guests"
+            label="No. of guests"
             name="noOfGuests"
             type="number"
             placeholder="0"
@@ -100,7 +100,7 @@ function MakeBooking() {
           <TextInput
             name="name"
             type="text"
-            placeholder="First and Last Name"
+            placeholder="First and last name"
           />
           <TextInput name="email" type="email" placeholder="Email" />
           <button className="formbtn" type="submit">
