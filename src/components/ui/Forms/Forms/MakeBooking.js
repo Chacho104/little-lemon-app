@@ -134,10 +134,7 @@ function MakeBooking() {
 
   return (
     <Fragment>
-      <FormIntro
-        title={"Reserve a Table"}
-        message={"You can now find a table for any occassion!"}
-      />
+      <FormIntro message={"You can easily find a table for any occassion! Little Lemon awaits you..."} />
       {!isSubmitting && !didSubmit && !error && makeBookingForm}
       {isSubmitting && !error && isSubmittingDetails}
       {!isSubmitting && !error && didSubmit && didSubmitDetails}
