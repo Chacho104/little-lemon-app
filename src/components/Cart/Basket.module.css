@@ -2,7 +2,7 @@
   height: auto;
   min-height: 48vh;
   border-radius: 2rem;
-  border: 1px solid #edefee;
+  border: 1px solid #495e57;
   margin-top: 3rem;
   padding: 3rem 1rem;
 }
@@ -39,12 +39,15 @@
 
 .checkout {
   margin-top: 3rem;
-  border: 1px solid #edefee;
+  border: 1px solid #495e57;
   border-radius: 2rem;
   padding: 3rem 1rem 0;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
+  .checkout {
+    margin-top: 1.5rem;
+  }
   .basket {
     margin-top: 1.5rem;
   }
