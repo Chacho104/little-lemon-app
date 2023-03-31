@@ -3,12 +3,11 @@ import { Fragment, useState } from "react";
 import * as Yup from "yup";
 import TextInput from "../Inputs/TextInput";
 import SelectInput from "../Inputs/SelectInput";
-import Button from "../../Button";
 import FormIntro from "./FormIntro";
 import TimeOptions from "./TimeOptions";
-
-import classes from "./MakeBooking.module.css";
-import { Link } from "react-router-dom";
+import IsSubmitting from "../SubmissionStates/IsSubmitting";
+import DidSubmit from "../SubmissionStates/DidSubmit";
+import SubmissionError from "../SubmissionStates/SubmissionError";
 
 function MakeBooking() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -111,36 +110,28 @@ function MakeBooking() {
       </Formik>
     </Fragment>
   );
+
   const isSubmittingDetails = (
-    <section className={classes.booking}>
-      <p>Processing your table reservation request...</p>
-    </section>
+    <IsSubmitting message="Processing your table reservation request..." />
   );
+
   const didSubmitDetails = (
-    <section>
-      <div className={classes.booking}>
-        <h2>Congratulations!</h2>
-        <p>
-          You have successfully reserved a table. To manage your reservations
-          (i.e cancel or edit), <Link to="/login">log in</Link> to your account
-          or <Link to="/signup">sign up</Link> with the name and email you've
-          just used to make your reservation.
-        </p>
-        <p>See you soon!</p>
-        <div className={classes.action}>
-          <Button onClick={refreshPage}>Close</Button>
-        </div>
-      </div>
-    </section>
+    <DidSubmit
+      message="You have successfully reserved a table. To manage your reservations (i.e
+        cancel or edit), log in to your account or sign up with the name and email you've just used
+        to make your reservation."
+      regards="See you soon!"
+      onClick={refreshPage}
+    />
   );
+
   const errorMessage = (
-    <section className={classes.booking}>
-      <p>Sorry, we could not process your reservation request.</p>
-      <p className={classes.refresh} onClick={refreshPage}>
-        Please try again.
-      </p>
-    </section>
+    <SubmissionError
+      message="Sorry, we could not process your reservation request."
+      onClick={refreshPage}
+    />
   );
+
   return (
     <Fragment>
       <FormIntro
