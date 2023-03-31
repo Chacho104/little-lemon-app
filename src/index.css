@@ -35,6 +35,8 @@ main section {
   line-height: 2;
 }
 
+/* General Form Element Styles*/
+
 .form {
   width: auto;
   max-width: 30rem;
@@ -50,6 +52,13 @@ main section {
 .form p {
   padding: 1.5rem 0;
   color: #fff;
+}
+
+.form h3 {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 .form p a {
@@ -83,18 +92,68 @@ main section {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
 }
 
-.formbtn:disabled {
-  background-color: #b1960d;
-  border: none;
-  cursor: not-allowed;
+/* General Form Submission Status Styles*/
+
+.confirm {
+  border: 1px solid #edefee;
 }
 
-.carousel-container {
-  display: flex;
-  gap: 6rem;
-  justify-content: space-between;
-  align-items: center;
+.booking-form {
+  width: auto;
+  max-width: 30rem;
+  margin: 0 auto;
 }
+
+.booking {
+  background-color: #fff;
+  width: auto;
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.booking h2 {
+  color: #333;
+  padding-bottom: 1rem;
+}
+
+.booking p {
+  color: #495e57;
+  line-height: 1.75;
+  font-size: 1.15rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.booking .refresh,
+.booking a {
+  cursor: pointer;
+  color: #495e57;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.booking .refresh:hover,
+.booking a:hover {
+  color: #f4ce14;
+}
+
+.booking .action {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.final-act {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Responsive Styling*/
 
 @media screen and (max-width: 1420px) {
   main section {
