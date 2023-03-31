@@ -64,7 +64,8 @@ main section {
   font-size: 1.15rem;
   line-height: 1.5;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem 0 1.5rem;
+  font-weight: 400;
 }
 
 .form p a {
@@ -85,7 +86,7 @@ main section {
   font-weight: bold;
   background-color: #f4ce14;
   border: 1px solid #f4ce14;
-  border-radius: 0.5rem;
+  border-radius: 10rem;
   padding: 0.5rem 1.5rem;
   width: 100%;
   text-align: center;
