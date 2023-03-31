@@ -10,7 +10,7 @@ function SignupForm() {
     <Fragment>
       <FormIntro
         message={
-          "Sign up to enjoy fast and reliable online services in a personalized account"
+          "Sign up to enjoy fast and reliable online services"
         }
       />
       <Formik
