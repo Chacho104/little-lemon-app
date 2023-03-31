@@ -144,6 +144,9 @@
 }
 
 @media screen and (max-width: 460px) {
+  .about h1 {
+    margin: 4rem 0 2rem;
+  }
   .branch {
     width: 95%;
     margin: 0 auto;
