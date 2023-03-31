@@ -54,6 +54,12 @@ main section {
   color: #fff;
 }
 
+.form h1 {
+  font-size: 2rem;
+  color: #495e57;
+  text-align: center;
+}
+
 .form h3 {
   font-size: 1.15rem;
   line-height: 1.5;
