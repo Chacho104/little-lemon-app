@@ -6,27 +6,12 @@ import TextInput from "../Inputs/TextInput";
 import FormIntro from "./FormIntro";
 
 function LoginForm() {
-  // const usernameOrEmailSchema = Yup.string().test(
-  //   "usernameOrEmail",
-  //   "Invalid username or email",
-  //   function (value) {
-  //     // Defining regular expressions for username and email formats
-  //     const usernameRegex = /^[a-zA-Z0-9_-]{3,16}$/;
-  //     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  //     // Checking if the input matches either format
-  //     if (usernameRegex.test(value) || emailRegex.test(value)) {
-  //       return true;
-  //     } else {
-  //       return false;
-  //     }
-  //   }
-  // );
   return (
     <Fragment>
       <FormIntro
-        title={"Little Lemon Login"}
-        message={"Log in to Enjoy fast and reliable online services"}
+        message={
+          "Log in to Enjoy fast and reliable online services in your accout"
+        }
       />
       <Formik
         initialValues={{
