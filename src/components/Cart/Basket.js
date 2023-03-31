@@ -6,6 +6,7 @@ import CartContext from "../../store/cart-context";
 import BasketItem from "./BasketItem";
 import Input from "../UI/Input";
 import CheckoutForm from "../UI/Forms/Forms/CheckoutForm";
+import { ScrollRestoration } from "react-router-dom";
 
 function Basket() {
   const [checkoutForm, setCheckOutForm] = useState(false);
@@ -61,46 +62,54 @@ function Basket() {
   return (
     <Fragment>
       {basket && (
-        <section className={classes.basket}>
-          <div>
-            {hasItems && <SecondaryBtn link={"/menu"} action={"Add More"} />}
-          </div>
-          {hasItems && (
+        <Fragment>
+          <ScrollRestoration />
+          <section className={classes.basket}>
             <div>
-              <h3>Cutlery</h3>
-              <Input
-                label="Help reduce plastic waste. Only ask for cutlery if you need it."
-                input={{ type: "checkbox" }}
-              />
+              {hasItems && <SecondaryBtn link={"/menu"} action={"Add More"} />}
             </div>
-          )}
-          {hasItems && <h1>Order Summary</h1>}
-          <div className={classes["basket-items"]}>{basketItems}</div>
-          <div className={classes.total}>
-            <span>Total Amount</span>
-            <span className={classes["final-price"]}>{totalAmount}</span>
-          </div>
-          <div className={classes.actions}>
-            <div className={classes.close}>
-              {hasItems && (
-                <Button onClick={clearCartItemsHandler}>Cancel</Button>
-              )}
+            {hasItems && (
+              <div>
+                <h3>Cutlery</h3>
+                <Input
+                  label="Help reduce plastic waste. Only ask for cutlery if you need it."
+                  input={{ type: "checkbox" }}
+                />
+              </div>
+            )}
+            {hasItems && <h1>Order Summary</h1>}
+            <div className={classes["basket-items"]}>{basketItems}</div>
+            <div className={classes.total}>
+              <span>Total Amount</span>
+              <span className={classes["final-price"]}>{totalAmount}</span>
             </div>
-            <div className={classes.proceed}>
-              {hasItems && <Button onClick={confirmOrderHandler}>Order</Button>}
-              {hasItems && checkoutForm}
+            <div className={classes.actions}>
+              <div className={classes.close}>
+                {hasItems && (
+                  <Button onClick={clearCartItemsHandler}>Cancel</Button>
+                )}
+              </div>
+              <div className={classes.proceed}>
+                {hasItems && (
+                  <Button onClick={confirmOrderHandler}>Order</Button>
+                )}
+                {hasItems && checkoutForm}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </Fragment>
       )}
       {checkoutForm && (
-        <section className={classes.checkout}>
-          <CheckoutForm
-            totalAmount={totalAmount}
-            rethink={rethinkOrderHandler}
-            orderSuccessful={orderSuccessfulHandler}
-          />
-        </section>
+        <Fragment>
+          <ScrollRestoration />
+          <section className={classes.checkout}>
+            <CheckoutForm
+              totalAmount={totalAmount}
+              rethink={rethinkOrderHandler}
+              orderSuccessful={orderSuccessfulHandler}
+            />
+          </section>
+        </Fragment>
       )}
     </Fragment>
   );
