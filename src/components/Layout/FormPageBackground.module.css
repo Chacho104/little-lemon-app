@@ -1,7 +1,8 @@
 .hero {
   background-image: url("../../assets/restaurant.jpg");
   width: 100%;
-  height: calc(100vh - 5rem);
+  height: auto;
+  min-height: calc(100vh - 5rem);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -12,7 +13,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-height: calc(100vh - 5rem);
 }
 
 .content {
