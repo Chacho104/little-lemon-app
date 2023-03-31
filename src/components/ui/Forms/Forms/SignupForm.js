@@ -9,8 +9,9 @@ function SignupForm() {
   return (
     <Fragment>
       <FormIntro
-        title={"Little Lemon Sign Up"}
-        message={"Gateway to fast and reliable online services"}
+        message={
+          "Sign up to enjoy fast and reliable online services in a personalized account"
+        }
       />
       <Formik
         initialValues={{
