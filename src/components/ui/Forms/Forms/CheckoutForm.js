@@ -44,7 +44,10 @@ function CheckoutForm(props) {
             "https://little-lemon-complete-default-rtdb.firebaseio.com/orders.json",
             {
               method: "POST",
-              body: JSON.stringify(values),
+              body: JSON.stringify({
+                user: values,
+                orderedItems: cartCtx.items,
+              }),
             }
           );
           if (!response.ok) {
@@ -68,22 +71,22 @@ function CheckoutForm(props) {
           <TextInput
             name="name"
             type="text"
-            placeholder="First and Last Name"
+            placeholder="First and last name"
           />
           <TextInput
             name="phoneNumber"
             type="text"
-            placeholder="Phone Number"
+            placeholder="Phone number"
           />
           <TextInput
             name="street"
             type="text"
-            placeholder="Name of Street/Area"
+            placeholder="Name of street/area"
           />
           <TextInput
             name="apartment"
             type="text"
-            placeholder="Name of Apartment"
+            placeholder="Name of apartment"
           />
           <div className="final-act">
             <button className="formbtn" type="button" onClick={props.rethink}>
