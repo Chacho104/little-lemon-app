@@ -27,8 +27,8 @@ function TimeOptions() {
   }));
 
   return (
-    <SelectInput label="Select Time" name="bookingTime">
-      <option value="">Available Time Slots</option>
+    <SelectInput label="Select time" name="bookingTime">
+      <option value="">Available time slots</option>
       {timeOptions.map((option) => (
         <option key={option.value} value={option.value}>
           {option.label}
