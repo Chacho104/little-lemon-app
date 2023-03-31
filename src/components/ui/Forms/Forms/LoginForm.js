@@ -43,7 +43,7 @@ function LoginForm() {
         })}
       >
         <Form className="form">
-          <TextInput name="email" type="alphanumeric" placeholder="Email" />
+          <TextInput name="email" type="email" placeholder="Email" />
           <TextInput name="password" type="password" placeholder="Password" />
           <button className="formbtn" type="submit">
             Log In
