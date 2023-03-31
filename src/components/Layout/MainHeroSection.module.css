@@ -68,6 +68,12 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .hero-section {
+    margin-bottom: 4rem;
+  }
+}
+
 @media screen and (max-width: 300px) {
   .hero-section {
     height: 33rem;
