@@ -1,6 +1,5 @@
 .hero {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin: 3rem auto;
 }
 
 .hero img {
@@ -8,4 +7,10 @@
   height: auto;
   max-height: 65vh;
   border-radius: 1.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  .hero {
+    margin: 1.5rem auto;
+  }
 }
