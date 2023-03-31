@@ -45,23 +45,21 @@ function SignupForm() {
       >
         <Form className="form">
           <TextInput
-            className="name"
             name="firstName"
             type="text"
-            placeholder="First Name"
+            placeholder="First name"
           />
           <TextInput
-            className="name"
             name="lastName"
             type="text"
-            placeholder="Last Name"
+            placeholder="Last name"
           />
           <TextInput name="email" type="email" placeholder="Email" />
           <TextInput name="password" type="password" placeholder="Password" />
           <TextInput
             name="confirmPassword"
             type="password"
-            placeholder="Confirm Password"
+            placeholder="Confirm password"
           />
           <button className="formbtn" type="submit">
             Sign Up
