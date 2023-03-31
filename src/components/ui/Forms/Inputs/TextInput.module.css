@@ -5,7 +5,7 @@
 
 .input-var input {
   width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 0.65rem 1rem;
   border-radius: 0.5rem;
   color: #495e57;
   font-size: 1.025rem;
@@ -24,7 +24,7 @@
 
 .text-input {
   background-color: #fff;
-  padding: 0.75rem 1rem;
+  padding: 0.65rem 1rem;
   margin-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
