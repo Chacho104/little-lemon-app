@@ -16,6 +16,7 @@ import Beverages from "./components/Meals/Beverages";
 import Wines from "./components/Meals/Wines";
 import Juices from "./components/Meals/Juices";
 import Signup from "./pages/Signup";
+import OrderRootLayout from "./pages/OrderRoot";
 
 function App() {
   const router = createBrowserRouter([
@@ -34,75 +35,68 @@ function App() {
           children: [
             {
               path: "breakfast",
-              children: [
-                { index: true, element: <BreakfastMeals /> },
-                {
-                  path: ":mealTitle",
-                  element: <MealDetails />,
-                },
-              ],
+              element: <BreakfastMeals />,
             },
             {
               path: "lunch",
-              children: [
-                { index: true, element: <LunchMeals /> },
-                {
-                  path: ":mealTitle",
-                  element: <MealDetails />,
-                },
-              ],
+              element: <LunchMeals />,
             },
             {
               path: "mains",
-              children: [
-                { index: true, element: <MainMeals /> },
-                {
-                  path: ":mealTitle",
-                  element: <MealDetails />,
-                },
-              ],
+              element: <MainMeals />,
             },
             {
               path: "desserts",
-              children: [
-                { index: true, element: <Desserts /> },
-                {
-                  path: ":mealTitle",
-                  element: <MealDetails />,
-                },
-              ],
+              element: <Desserts />,
             },
             {
               path: "beverages",
-              children: [
-                { index: true, element: <Beverages /> },
-                {
-                  path: ":mealTitle",
-                  element: <MealDetails />,
-                },
-              ],
+              element: <Beverages />,
             },
             {
               path: "wines",
-              children: [
-                { index: true, element: <Wines /> },
-                {
-                  path: ":mealTitle",
-                  element: <MealDetails />,
-                },
-              ],
+              element: <Wines />,
             },
             {
               path: "juices",
-              children: [
-                { index: true, element: <Juices /> },
-                {
-                  path: ":mealTitle",
-                  element: <MealDetails />,
-                },
-              ],
+              element: <Juices />,
             },
           ],
+        },
+        {
+          path: "menu/breakfast",
+          element: <OrderRootLayout />,
+          children: [{ path: ":mealTitle", element: <MealDetails /> }],
+        },
+        {
+          path: "menu/lunch",
+          element: <OrderRootLayout />,
+          children: [{ path: ":mealTitle", element: <MealDetails /> }],
+        },
+        {
+          path: "menu/mains",
+          element: <OrderRootLayout />,
+          children: [{ path: ":mealTitle", element: <MealDetails /> }],
+        },
+        {
+          path: "menu/desserts",
+          element: <OrderRootLayout />,
+          children: [{ path: ":mealTitle", element: <MealDetails /> }],
+        },
+        {
+          path: "menu/beverages",
+          element: <OrderRootLayout />,
+          children: [{ path: ":mealTitle", element: <MealDetails /> }],
+        },
+        {
+          path: "menu/wines",
+          element: <OrderRootLayout />,
+          children: [{ path: ":mealTitle", element: <MealDetails /> }],
+        },
+        {
+          path: "menu/juices",
+          element: <OrderRootLayout />,
+          children: [{ path: ":mealTitle", element: <MealDetails /> }],
         },
         { path: "reservations", element: <BookingPage /> },
         { path: "login", element: <LoginPage /> },
