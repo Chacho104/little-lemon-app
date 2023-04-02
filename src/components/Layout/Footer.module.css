@@ -7,6 +7,7 @@ footer {
   width: 80%;
   height: 88%;
   margin: 0 auto;
+  padding: 2rem 0;
 
   display: flex;
   justify-content: space-around;
@@ -33,10 +34,6 @@ footer {
 
 .bottNav li a:hover {
   color: #fbdabb;
-}
-
-.item {
-  margin: 2rem 0;
 }
 
 .icon {
