@@ -18,7 +18,7 @@ function SpecialMealItem(props) {
           <p>{props.description}</p>
         </div>
         <div className={classes.action}>
-          <Link to={`/menu/${props.category}/${props.title}`} preventScrollReset={true} >Order for Delivery</Link>
+          <Link to={`/menu/${props.category}/${props.title}`}>Order for Delivery</Link>
           <MdOutlineDeliveryDining />
         </div>
       </li>
