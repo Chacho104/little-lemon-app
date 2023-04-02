@@ -11,8 +11,7 @@
   text-align: center;
 }
 
-.btn:hover,
-.btn:active {
+.btn:hover {
   background-color: #ccac0f;
   border-color: #ccac0f;
 }
