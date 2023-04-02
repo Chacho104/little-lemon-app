@@ -13,20 +13,25 @@
   display: flex;
 }
 
-.time svg {
+.time-only {
+  display: flex;
+}
+
+.time svg,
+.time-only svg {
   font-size: 1.3rem;
   margin-right: 0.5rem;
   color: #495e57;
 }
 
 .delivery a {
-    border: 1px solid #495e57;
-    border-radius: 2rem;
-    padding: 0.4rem 0.8rem;
-    background-color: #edefee;
-    color: #495e57;
+  border: 1px solid #495e57;
+  border-radius: 2rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #edefee;
+  color: #495e57;
 }
 
 .delivery a:hover {
-    background-color: #fff;
+  background-color: #fff;
 }
