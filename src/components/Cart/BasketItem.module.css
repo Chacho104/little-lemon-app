@@ -60,8 +60,7 @@
   margin: 0.25rem;
 }
 
-.cart-item button:hover,
-.cart-item button:active {
+.cart-item button:hover {
   background-color: #f4ce14;
   color: #495e57;
   border: none;
