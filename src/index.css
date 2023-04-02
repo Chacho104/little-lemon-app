@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li {
   list-style: none;
 }
@@ -92,8 +96,7 @@ main section {
   text-align: center;
 }
 
-.formbtn:hover,
-.formbtn.active {
+.formbtn:hover {
   background-color: #ccac0f;
   border-color: #ccac0f;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
