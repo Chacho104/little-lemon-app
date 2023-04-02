@@ -7,7 +7,7 @@ import MenuHero from "../assets/menuhero.jpg";
 function MenuRootLayout() {
   return (
     <Fragment>
-      <PageHero image={MenuHero} alt={"Mario and Adrian"} />
+      <PageHero image={MenuHero} alt={"Delicious Meals"} />
       <MealsNavigation
         title={"Order for Delivery"}
         message={
