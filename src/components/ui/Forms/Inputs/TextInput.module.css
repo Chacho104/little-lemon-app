@@ -8,7 +8,7 @@
   padding: 0.65rem 1rem;
   border-radius: 0.5rem;
   color: #495e57;
-  font-size: 1.025rem;
+  font-size: 1rem;
   border: 1px solid #495e57;
   outline: none;
 }
@@ -32,7 +32,7 @@
 
 .text-input label {
   color: #495e57;
-  font-size: 1.0025rem;
+  font-size: 1rem;
 }
 
 .text-input input {
