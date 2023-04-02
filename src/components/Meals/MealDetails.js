@@ -2,7 +2,6 @@ import { useParams, useRouteLoaderData } from "react-router-dom";
 import MealItemDetails from "./MealItemDetails";
 
 function MealDetails() {
-
   const params = useParams();
   const allMeals = useRouteLoaderData("root");
 
