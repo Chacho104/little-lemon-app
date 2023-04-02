@@ -6,12 +6,40 @@
   border-radius: 2rem;
 }
 
+.image {
+  position: relative;
+}
+
 .meal-item img {
   width: 100%;
   height: auto;
-  max-height: 18.75rem;
+  max-height: 18rem;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
+}
+
+.backbtn {
+  background-color: #f4ce14;
+  padding: 0.6rem 1.6rem;
+  border: none;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  position: absolute;
+  margin: 0;
+  top: 3.5rem;
+  left: 4rem;
+  transform: translate(-50%, -50%);
+}
+
+.backbtn:hover {
+  background-color: #ccac0f;
+  border-color: #ccac0f;
 }
 
 .details {
@@ -28,4 +56,10 @@
 
 .details p {
   color: #495e57;
+}
+
+@media screen and (max-width: 600px) {
+  .meal-item {
+    margin: 1.5rem 0;
+  }
 }
