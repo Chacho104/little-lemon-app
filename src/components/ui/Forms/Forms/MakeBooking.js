@@ -82,7 +82,12 @@ function MakeBooking() {
         }}
       >
         <Form className="form">
-          <TextInput label="Date" name="Date" type="date" />
+          <TextInput
+            label="Date"
+            name="Date"
+            type="date"
+            placeholder="dd/mm/yy"
+          />
           <TimeOptions />
           <TextInput
             label="No. of guests"
