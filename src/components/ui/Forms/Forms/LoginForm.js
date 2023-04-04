@@ -10,7 +10,7 @@ function LoginForm() {
     <Fragment>
       <FormIntro
         message={
-          "Log in to Enjoy fast and reliable online services in your accout"
+          "Log in to enjoy fast and reliable online services in your accout"
         }
       />
       <Formik
