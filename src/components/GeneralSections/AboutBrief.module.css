@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   gap: 3rem;
-  padding: 4rem 0 2rem;
+  padding: 2rem 0;
 }
 
 .content h1 {
