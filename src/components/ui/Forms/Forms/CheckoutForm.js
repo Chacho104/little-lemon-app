@@ -41,7 +41,7 @@ function CheckoutForm(props) {
           setSubmitting(true);
           setIsSubmitting(true);
           const response = await fetch(
-            "https://little-lemon-booking-default-rtdb.firebaseio.com/orders.json",
+            "https://base-db-2343e-default-rtdb.firebaseio.com/orders.json",
             {
               method: "POST",
               body: JSON.stringify({
