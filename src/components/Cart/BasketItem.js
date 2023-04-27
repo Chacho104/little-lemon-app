@@ -15,8 +15,8 @@ const BasketItem = (props) => {
         </div>
       </div>
       <div className={classes.actions}>
-        <button onClick={props.onAdd}>+</button>
         <button onClick={props.onRemove}>-</button>
+        <button onClick={props.onAdd}>+</button>
       </div>
     </li>
   );
