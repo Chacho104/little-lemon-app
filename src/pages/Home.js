@@ -22,7 +22,7 @@ export default HomePage;
 
 export async function loader() {
   const response = await fetch(
-    "https://base-db-2343e-default-rtdb.firebaseio.com/testimonials.json"
+    "https://little-lemon-complete-default-rtdb.firebaseio.com/testimonials.json"
   );
   if (!response.ok) {
     return json({ message: "Could not fetch testimonials" }, { status: 500 });
