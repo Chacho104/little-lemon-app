@@ -64,7 +64,7 @@ function MakeBooking() {
           setSubmitting(true);
           setIsSubmitting(true);
           const response = await fetch(
-            "https://little-lemon-booking-default-rtdb.firebaseio.com/reservations.json",
+            "https://base-db-2343e-default-rtdb.firebaseio.com/reservations.json",
             {
               method: "POST",
               body: JSON.stringify(values),
